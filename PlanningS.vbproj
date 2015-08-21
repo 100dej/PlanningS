@@ -1,0 +1,462 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{23B684D8-771F-40F6-BF87-2D7F7669960B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>PlanningS.My.MyApplication</StartupObject>
+    <RootNamespace>PlanningS</RootNamespace>
+    <AssemblyName>PlanningS</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <ManifestCertificateThumbprint>4E4E7D8EE5D094419A89182E8E0ACA812B9794D9</ManifestCertificateThumbprint>
+    <ManifestKeyFile>PlanningS_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>false</SignManifests>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <ApplicationIcon>ModelLogo4_1.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>C:\inetpub\wwwroot\PlanningS\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>true</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>http://172.31.195.13/00PlanningS/</InstallUrl>
+    <UpdateUrl>http://172.31.195.13/00PlanningS/</UpdateUrl>
+    <ProductName>PlanningS</ProductName>
+    <PublisherName>NawaPlastic</PublisherName>
+    <MinimumRequiredVersion>1.0.0.0</MinimumRequiredVersion>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>Plannings.htm</WebPage>
+    <TrustUrlParameters>true</TrustUrlParameters>
+    <ApplicationRevision>76</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperComponentsLocation>Relative</BootstrapperComponentsLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>PlanningS.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>PlanningS.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="DateTimeExtensions, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\DateTimeExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="VS2005Extender, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\VS2005Extender.dll</HintPath>
+    </Reference>
+    <Reference Include="WeifenLuo.WinFormsUI.Docking, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WeifenLuo.WinFormsUI.Docking.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Data.OleDb" />
+    <Import Include="System.Data.SqlClient" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Reflection" />
+    <Import Include="System.Resources" />
+    <Import Include="System.Web" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Windows.Forms.DataVisualization.Charting" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="Class\NPIHeaderColumn.vb" />
+    <Compile Include="Class\NPILabel.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Class\NPIString.vb" />
+    <Compile Include="Form\Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Form2.Designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Form3.Designer.vb">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Form3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Form4.Designer.vb">
+      <DependentUpon>Form4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Form4.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FrmChangecsotBeginStock.designer.vb">
+      <DependentUpon>FrmChangecsotBeginStock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FrmChangecsotBeginStock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Form6.Designer.vb">
+      <DependentUpon>Form6.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Form6.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FrmChangeMatConsoh.Designer.vb">
+      <DependentUpon>FrmChangeMatConsoh.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FrmChangeMatConsoh.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FrmDowntime.Designer.vb">
+      <DependentUpon>FrmDowntime.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FrmDowntime.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FrmPreGI.Designer.vb">
+      <DependentUpon>FrmPreGI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FrmPreGI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FrmPreGIExtra.Designer.vb">
+      <DependentUpon>FrmPreGIExtra.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FrmPreGIExtra.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FrmDashBoard.Designer.vb">
+      <DependentUpon>FrmDashBoard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FrmDashBoard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FrmGIAccount.Designer.vb">
+      <DependentUpon>FrmGIAccount.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FrmGIAccount.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FrmGiToConsoh.Designer.vb">
+      <DependentUpon>FrmGiToConsoh.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FrmGiToConsoh.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FrmPictureLoop.Designer.vb">
+      <DependentUpon>FrmPictureLoop.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FrmPictureLoop.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FrmPreGIverCCtr.Designer.vb">
+      <DependentUpon>FrmPreGIverCCtr.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FrmPreGIverCCtr.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FrmProgramBehavior.Designer.vb">
+      <DependentUpon>FrmProgramBehavior.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FrmProgramBehavior.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FrmPSO.Designer.vb">
+      <DependentUpon>FrmPSO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FrmPSO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FrmRevalue.Designer.vb">
+      <DependentUpon>FrmRevalue.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FrmRevalue.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FrmUserBehavior.Designer.vb">
+      <DependentUpon>FrmUserBehavior.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FrmUserBehavior.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FrmDaysSale.Designer.vb">
+      <DependentUpon>FrmDaysSale.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FrmDaysSale.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FrmMain.designer.vb">
+      <DependentUpon>FrmMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FrmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FrmMasterPlanning.Designer.vb">
+      <DependentUpon>FrmMasterPlanning.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FrmMasterPlanning.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FrmMatMaster.Designer.vb">
+      <DependentUpon>FrmMatMaster.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FrmMatMaster.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FrmMenu.Designer.vb">
+      <DependentUpon>FrmMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FrmMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FrmUserVariant.Designer.vb">
+      <DependentUpon>FrmUserVariant.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FrmUserVariant.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Class\NPIButton.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Class\NPIConnect.vb" />
+    <Compile Include="Class\NPIData.vb" />
+    <Compile Include="Class\NPIText.vb">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form\Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Form2.resx">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Form3.resx">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Form4.resx">
+      <DependentUpon>Form4.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FrmChangecsotBeginStock.resx">
+      <DependentUpon>FrmChangecsotBeginStock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Form6.resx">
+      <DependentUpon>Form6.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FrmChangeMatConsoh.resx">
+      <DependentUpon>FrmChangeMatConsoh.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FrmDowntime.resx">
+      <DependentUpon>FrmDowntime.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FrmPreGI.resx">
+      <DependentUpon>FrmPreGI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FrmPreGIExtra.resx">
+      <DependentUpon>FrmPreGIExtra.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FrmDashBoard.resx">
+      <DependentUpon>FrmDashBoard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FrmGIAccount.resx">
+      <DependentUpon>FrmGIAccount.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FrmGiToConsoh.resx">
+      <DependentUpon>FrmGiToConsoh.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FrmPictureLoop.resx">
+      <DependentUpon>FrmPictureLoop.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FrmPreGIverCCtr.resx">
+      <DependentUpon>FrmPreGIverCCtr.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FrmProgramBehavior.resx">
+      <DependentUpon>FrmProgramBehavior.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FrmPSO.resx">
+      <DependentUpon>FrmPSO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FrmRevalue.resx">
+      <DependentUpon>FrmRevalue.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FrmUserBehavior.resx">
+      <DependentUpon>FrmUserBehavior.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FrmDaysSale.resx">
+      <DependentUpon>FrmDaysSale.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FrmMain.resx">
+      <DependentUpon>FrmMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FrmMasterPlanning.resx">
+      <DependentUpon>FrmMasterPlanning.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FrmMatMaster.resx">
+      <DependentUpon>FrmMatMaster.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FrmMenu.resx">
+      <DependentUpon>FrmMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FrmUserVariant.resx">
+      <DependentUpon>FrmUserVariant.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="PlanningS_TemporaryKey.pfx" />
+    <None Include="Resources\OK.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ModelLogo4_1.ico" />
+    <Content Include="Resources\end.png" />
+    <Content Include="Resources\equal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
