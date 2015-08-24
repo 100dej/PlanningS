@@ -5,7 +5,7 @@
         AddHandler TreeView1.KeyPress, AddressOf TreeView1_KeyPress
     End Sub
     Private Sub TreeView1_OpenForm(ByVal sender As Object, ByVal e As System.EventArgs)
-        Me.DockState = WeifenLuo.WinFormsUI.DockState.DockLeftAutoHide
+        Me.DockState = WeifenLuo.WinFormsUI.Docking.DockState.DockLeftAutoHide
         Dim Y As String = TreeView1.SelectedNode.Name
         Select Case Y
             Case "nd001MatMaster"
@@ -114,7 +114,7 @@
                 cf.Show(DockPanel)
             Case Else
                 MsgBox("อยู่ระหว่างการจัดทำ")
-                Me.DockState = WeifenLuo.WinFormsUI.DockState.DockLeft
+                Me.DockState = WeifenLuo.WinFormsUI.Docking.DockState.DockLeft
         End Select
     End Sub
     Private Sub TreeView1_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs)

@@ -1,11 +1,9 @@
-﻿Imports VS2005Extender
-Public Class frmMain
+﻿Public Class frmMain
     Dim cx As New NPIData(NPIConnect.NPIRYSV62PlanningS)
     Private Sub Form1_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         Me.WindowState = FormWindowState.Maximized
         ImageList1 = cx.fillImlWithFilesFromDir("\\172.31.195.13\plannings\install\installpc\PictureLoop")
-        VS2005Style.Extender.SetSchema(DockPanel, VS2005Style.Extender.Schema.FromBase)
-        FrmMenu.Show(DockPanel, WeifenLuo.WinFormsUI.DockState.DockLeft)
+        FrmMenu.Show(DockPanel, WeifenLuo.WinFormsUI.Docking.DockState.DockLeft)
         FrmMenu.CloseButton = False
 
         If (System.Deployment.Application.ApplicationDeployment.IsNetworkDeployed) Then

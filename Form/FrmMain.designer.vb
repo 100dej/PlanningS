@@ -23,7 +23,7 @@ Partial Class frmMain
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container
-        Me.DockPanel = New WeifenLuo.WinFormsUI.DockPanel
+        Me.DockPanel = New WeifenLuo.WinFormsUI.Docking.DockPanel
         Me.ImageList1 = New System.Windows.Forms.ImageList(Me.components)
         Me.SuspendLayout()
         '
@@ -56,7 +56,7 @@ Partial Class frmMain
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents DockPanel As WeifenLuo.WinFormsUI.DockPanel
+    Friend WithEvents DockPanel As WeifenLuo.WinFormsUI.Docking.DockPanel
     Friend WithEvents ImageList1 As System.Windows.Forms.ImageList
 
 End Class
