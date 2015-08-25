@@ -21,7 +21,7 @@
     <ManifestKeyFile>PlanningS_TemporaryKey.pfx</ManifestKeyFile>
     <GenerateManifests>true</GenerateManifests>
     <SignManifests>false</SignManifests>
-    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <ApplicationIcon>ModelLogo4_1.ico</ApplicationIcon>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
@@ -30,7 +30,7 @@
     <OldToolsVersion>3.5</OldToolsVersion>
     <PublishUrl>C:\inetpub\wwwroot\PlanningS\</PublishUrl>
     <Install>true</Install>
-    <InstallFrom>Web</InstallFrom>
+    <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>true</UpdateEnabled>
     <UpdateMode>Foreground</UpdateMode>
     <UpdateInterval>7</UpdateInterval>
@@ -38,7 +38,6 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>true</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <InstallUrl>http://172.31.195.13/00PlanningS/</InstallUrl>
     <UpdateUrl>http://172.31.195.13/00PlanningS/</UpdateUrl>
     <ProductName>PlanningS</ProductName>
     <PublisherName>NawaPlastic</PublisherName>
@@ -46,7 +45,7 @@
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>Plannings.htm</WebPage>
     <TrustUrlParameters>true</TrustUrlParameters>
-    <ApplicationRevision>76</ApplicationRevision>
+    <ApplicationRevision>77</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
@@ -143,82 +142,82 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Class\NPIString.vb" />
-    <Compile Include="Form\Form1.Designer.vb">
+    <Compile Include="Form\900\Form1.Designer.vb">
       <DependentUpon>Form1.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form\Form1.vb">
+    <Compile Include="Form\900\Form1.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form\Form2.Designer.vb">
+    <Compile Include="Form\900\Form2.Designer.vb">
       <DependentUpon>Form2.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form\Form2.vb">
+    <Compile Include="Form\900\Form2.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form\Form3.Designer.vb">
+    <Compile Include="Form\900\Form3.Designer.vb">
       <DependentUpon>Form3.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form\Form3.vb">
+    <Compile Include="Form\900\Form3.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form\Form4.Designer.vb">
+    <Compile Include="Form\900\Form4.Designer.vb">
       <DependentUpon>Form4.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form\Form4.vb">
+    <Compile Include="Form\900\Form4.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form\FrmChangecsotBeginStock.designer.vb">
+    <Compile Include="Form\900\FrmChangecsotBeginStock.designer.vb">
       <DependentUpon>FrmChangecsotBeginStock.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form\FrmChangecsotBeginStock.vb">
+    <Compile Include="Form\900\FrmChangecsotBeginStock.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form\Form6.Designer.vb">
+    <Compile Include="Form\900\Form6.Designer.vb">
       <DependentUpon>Form6.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form\Form6.vb">
+    <Compile Include="Form\900\Form6.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form\FrmChangeMatConsoh.Designer.vb">
+    <Compile Include="Form\800\FrmChangeMatConsoh.Designer.vb">
       <DependentUpon>FrmChangeMatConsoh.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form\FrmChangeMatConsoh.vb">
+    <Compile Include="Form\800\FrmChangeMatConsoh.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form\FrmDowntime.Designer.vb">
+    <Compile Include="Form\200\FrmDowntime.Designer.vb">
       <DependentUpon>FrmDowntime.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form\FrmDowntime.vb">
+    <Compile Include="Form\200\FrmDowntime.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form\FrmPreGI.Designer.vb">
+    <Compile Include="Form\800\FrmPreGI.Designer.vb">
       <DependentUpon>FrmPreGI.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form\FrmPreGI.vb">
+    <Compile Include="Form\800\FrmPreGI.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form\FrmPreGIExtra.Designer.vb">
+    <Compile Include="Form\800\FrmPreGIExtra.Designer.vb">
       <DependentUpon>FrmPreGIExtra.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form\FrmPreGIExtra.vb">
+    <Compile Include="Form\800\FrmPreGIExtra.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form\FrmDashBoard.Designer.vb">
+    <Compile Include="Form\100\FrmDashBoard.Designer.vb">
       <DependentUpon>FrmDashBoard.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form\FrmDashBoard.vb">
+    <Compile Include="Form\100\FrmDashBoard.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form\FrmGIAccount.Designer.vb">
+    <Compile Include="Form\800\FrmGIAccount.Designer.vb">
       <DependentUpon>FrmGIAccount.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form\FrmGIAccount.vb">
+    <Compile Include="Form\800\FrmGIAccount.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form\FrmGiToConsoh.Designer.vb">
+    <Compile Include="Form\800\FrmGiToConsoh.Designer.vb">
       <DependentUpon>FrmGiToConsoh.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form\FrmGiToConsoh.vb">
+    <Compile Include="Form\800\FrmGiToConsoh.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form\FrmPictureLoop.Designer.vb">
@@ -227,34 +226,34 @@
     <Compile Include="Form\FrmPictureLoop.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form\FrmPreGIverCCtr.Designer.vb">
+    <Compile Include="Form\800\FrmPreGIverCCtr.Designer.vb">
       <DependentUpon>FrmPreGIverCCtr.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form\FrmPreGIverCCtr.vb">
+    <Compile Include="Form\800\FrmPreGIverCCtr.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form\FrmProgramBehavior.Designer.vb">
+    <Compile Include="Form\700\FrmProgramBehavior.Designer.vb">
       <DependentUpon>FrmProgramBehavior.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form\FrmProgramBehavior.vb">
+    <Compile Include="Form\700\FrmProgramBehavior.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form\FrmPSO.Designer.vb">
+    <Compile Include="Form\100\FrmPSO.Designer.vb">
       <DependentUpon>FrmPSO.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form\FrmPSO.vb">
+    <Compile Include="Form\100\FrmPSO.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form\FrmRevalue.Designer.vb">
+    <Compile Include="Form\900\FrmRevalue.Designer.vb">
       <DependentUpon>FrmRevalue.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form\FrmRevalue.vb">
+    <Compile Include="Form\900\FrmRevalue.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form\FrmUserBehavior.Designer.vb">
+    <Compile Include="Form\700\FrmUserBehavior.Designer.vb">
       <DependentUpon>FrmUserBehavior.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form\FrmUserBehavior.vb">
+    <Compile Include="Form\700\FrmUserBehavior.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form\FrmDaysSale.Designer.vb">
@@ -269,16 +268,16 @@
     <Compile Include="Form\FrmMain.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form\FrmMasterPlanning.Designer.vb">
+    <Compile Include="Form\100\FrmMasterPlanning.Designer.vb">
       <DependentUpon>FrmMasterPlanning.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form\FrmMasterPlanning.vb">
+    <Compile Include="Form\100\FrmMasterPlanning.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form\FrmMatMaster.Designer.vb">
+    <Compile Include="Form\000\FrmMatMaster.Designer.vb">
       <DependentUpon>FrmMatMaster.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form\FrmMatMaster.vb">
+    <Compile Include="Form\000\FrmMatMaster.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form\FrmMenu.Designer.vb">
@@ -316,63 +315,88 @@
     <Compile Include="Class\NPIText.vb">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="PlanningS_Function.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PlanningS_Function.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PlanningS_stored_procedure.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PlanningS_stored_procedure.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PlanningS_stored_procedure1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PlanningS_stored_procedure.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PlanningS_Table.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PlanningS_Table.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PlanningS_View.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PlanningS_View.xsd</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Form\Form1.resx">
+    <EmbeddedResource Include="Form\900\Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form\Form2.resx">
+    <EmbeddedResource Include="Form\900\Form2.resx">
       <DependentUpon>Form2.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form\Form3.resx">
+    <EmbeddedResource Include="Form\900\Form3.resx">
       <DependentUpon>Form3.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form\Form4.resx">
+    <EmbeddedResource Include="Form\900\Form4.resx">
       <DependentUpon>Form4.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form\FrmChangecsotBeginStock.resx">
+    <EmbeddedResource Include="Form\900\FrmChangecsotBeginStock.resx">
       <DependentUpon>FrmChangecsotBeginStock.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form\Form6.resx">
+    <EmbeddedResource Include="Form\900\Form6.resx">
       <DependentUpon>Form6.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form\FrmChangeMatConsoh.resx">
+    <EmbeddedResource Include="Form\800\FrmChangeMatConsoh.resx">
       <DependentUpon>FrmChangeMatConsoh.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form\FrmDowntime.resx">
+    <EmbeddedResource Include="Form\200\FrmDowntime.resx">
       <DependentUpon>FrmDowntime.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form\FrmPreGI.resx">
+    <EmbeddedResource Include="Form\800\FrmPreGI.resx">
       <DependentUpon>FrmPreGI.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form\FrmPreGIExtra.resx">
+    <EmbeddedResource Include="Form\800\FrmPreGIExtra.resx">
       <DependentUpon>FrmPreGIExtra.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form\FrmDashBoard.resx">
+    <EmbeddedResource Include="Form\100\FrmDashBoard.resx">
       <DependentUpon>FrmDashBoard.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form\FrmGIAccount.resx">
+    <EmbeddedResource Include="Form\800\FrmGIAccount.resx">
       <DependentUpon>FrmGIAccount.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form\FrmGiToConsoh.resx">
+    <EmbeddedResource Include="Form\800\FrmGiToConsoh.resx">
       <DependentUpon>FrmGiToConsoh.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form\FrmPictureLoop.resx">
       <DependentUpon>FrmPictureLoop.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form\FrmPreGIverCCtr.resx">
+    <EmbeddedResource Include="Form\800\FrmPreGIverCCtr.resx">
       <DependentUpon>FrmPreGIverCCtr.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form\FrmProgramBehavior.resx">
+    <EmbeddedResource Include="Form\700\FrmProgramBehavior.resx">
       <DependentUpon>FrmProgramBehavior.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form\FrmPSO.resx">
+    <EmbeddedResource Include="Form\100\FrmPSO.resx">
       <DependentUpon>FrmPSO.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form\FrmRevalue.resx">
+    <EmbeddedResource Include="Form\900\FrmRevalue.resx">
       <DependentUpon>FrmRevalue.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form\FrmUserBehavior.resx">
+    <EmbeddedResource Include="Form\700\FrmUserBehavior.resx">
       <DependentUpon>FrmUserBehavior.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form\FrmDaysSale.resx">
@@ -381,10 +405,10 @@
     <EmbeddedResource Include="Form\FrmMain.resx">
       <DependentUpon>FrmMain.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form\FrmMasterPlanning.resx">
+    <EmbeddedResource Include="Form\100\FrmMasterPlanning.resx">
       <DependentUpon>FrmMasterPlanning.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form\FrmMatMaster.resx">
+    <EmbeddedResource Include="Form\000\FrmMatMaster.resx">
       <DependentUpon>FrmMatMaster.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form\FrmMenu.resx">
@@ -420,7 +444,51 @@
     <None Include="packages\EntityFramework.6.1.3\tools\init.ps1" />
     <None Include="packages\EntityFramework.6.1.3\tools\install.ps1" />
     <None Include="packages\repositories.config" />
+    <None Include="PlanningS_Function.xsc">
+      <DependentUpon>PlanningS_Function.xsd</DependentUpon>
+    </None>
+    <None Include="PlanningS_Function.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PlanningS_Function.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PlanningS_Function.xss">
+      <DependentUpon>PlanningS_Function.xsd</DependentUpon>
+    </None>
+    <None Include="PlanningS_stored_procedure.xsc">
+      <DependentUpon>PlanningS_stored_procedure.xsd</DependentUpon>
+    </None>
+    <None Include="PlanningS_stored_procedure.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>PlanningS_stored_procedure1.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="PlanningS_stored_procedure.xss">
+      <DependentUpon>PlanningS_stored_procedure.xsd</DependentUpon>
+    </None>
+    <None Include="PlanningS_Table.xsc">
+      <DependentUpon>PlanningS_Table.xsd</DependentUpon>
+    </None>
+    <None Include="PlanningS_Table.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PlanningS_Table.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PlanningS_Table.xss">
+      <DependentUpon>PlanningS_Table.xsd</DependentUpon>
+    </None>
     <None Include="PlanningS_TemporaryKey.pfx" />
+    <None Include="PlanningS_View.xsc">
+      <DependentUpon>PlanningS_View.xsd</DependentUpon>
+    </None>
+    <None Include="PlanningS_View.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PlanningS_View.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PlanningS_View.xss">
+      <DependentUpon>PlanningS_View.xsd</DependentUpon>
+    </None>
     <None Include="Resources\OK.bmp" />
   </ItemGroup>
   <ItemGroup>
@@ -448,11 +516,6 @@
       <Visible>False</Visible>
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
-    </BootstrapperPackage>
-    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
-      <Visible>False</Visible>
-      <ProductName>Windows Installer 4.5</ProductName>
-      <Install>true</Install>
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>

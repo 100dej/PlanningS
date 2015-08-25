@@ -1,0 +1,838 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PlanningS_View" targetNamespace="http://tempuri.org/PlanningS_View.xsd" xmlns:mstns="http://tempuri.org/PlanningS_View.xsd" xmlns="http://tempuri.org/PlanningS_View.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="PlanningSConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="PlanningSConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.PlanningS.My.MySettings.GlobalReference.Default.PlanningSConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="GI_Doc_printTableAdapter" GeneratorDataComponentClassName="GI_Doc_printTableAdapter" Name="GI_Doc_print" UserDataComponentName="GI_Doc_printTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="PlanningSConnectionString (MySettings)" DbObjectName="PlanningS.dbo.GI_Doc_print" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Uname, Headertext, itemNo, Productcode, mmateng, OrderQty, GLAccount, CostCenter, mmatthai FROM dbo.GI_Doc_print</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Uname" DataSetColumn="Uname" />
+              <Mapping SourceColumn="Headertext" DataSetColumn="Headertext" />
+              <Mapping SourceColumn="itemNo" DataSetColumn="itemNo" />
+              <Mapping SourceColumn="Productcode" DataSetColumn="Productcode" />
+              <Mapping SourceColumn="mmateng" DataSetColumn="mmateng" />
+              <Mapping SourceColumn="OrderQty" DataSetColumn="OrderQty" />
+              <Mapping SourceColumn="GLAccount" DataSetColumn="GLAccount" />
+              <Mapping SourceColumn="CostCenter" DataSetColumn="CostCenter" />
+              <Mapping SourceColumn="mmatthai" DataSetColumn="mmatthai" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="nameTableAdapter" GeneratorDataComponentClassName="nameTableAdapter" Name="name" UserDataComponentName="nameTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="PlanningSConnectionString (MySettings)" DbObjectName="PlanningS.warlord.name" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Thai_name, Jap_name FROM warlord.name</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Thai_name" DataSetColumn="Thai_name" />
+              <Mapping SourceColumn="Jap_name" DataSetColumn="Jap_name" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="skillTableAdapter" GeneratorDataComponentClassName="skillTableAdapter" Name="skill" UserDataComponentName="skillTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="PlanningSConnectionString (MySettings)" DbObjectName="PlanningS.warlord.skill" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Thai_skill, Jap_skill FROM warlord.skill</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Thai_skill" DataSetColumn="Thai_skill" />
+              <Mapping SourceColumn="Jap_skill" DataSetColumn="Jap_skill" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="skill_sync_viewTableAdapter" GeneratorDataComponentClassName="skill_sync_viewTableAdapter" Name="skill_sync_view" UserDataComponentName="skill_sync_viewTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="PlanningSConnectionString (MySettings)" DbObjectName="PlanningS.warlord.skill_sync_view" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT skill, Main_skill, Atk_skill, Def_skill, Int_skill, Hide_skill FROM warlord.skill_sync_view</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="skill" DataSetColumn="skill" />
+              <Mapping SourceColumn="Main_skill" DataSetColumn="Main_skill" />
+              <Mapping SourceColumn="Atk_skill" DataSetColumn="Atk_skill" />
+              <Mapping SourceColumn="Def_skill" DataSetColumn="Def_skill" />
+              <Mapping SourceColumn="Int_skill" DataSetColumn="Int_skill" />
+              <Mapping SourceColumn="Hide_skill" DataSetColumn="Hide_skill" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="V_100_DataPlanningTableAdapter" GeneratorDataComponentClassName="V_100_DataPlanningTableAdapter" Name="V_100_DataPlanning" UserDataComponentName="V_100_DataPlanningTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="PlanningSConnectionString (MySettings)" DbObjectName="PlanningS.dbo.V_100_DataPlanning" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT PlantName, mmatno, UR, ATP, AvgPast, AvgRolling, SFPerDay, RunDate FROM dbo.V_100_DataPlanning</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="PlantName" DataSetColumn="PlantName" />
+              <Mapping SourceColumn="mmatno" DataSetColumn="mmatno" />
+              <Mapping SourceColumn="UR" DataSetColumn="UR" />
+              <Mapping SourceColumn="ATP" DataSetColumn="ATP" />
+              <Mapping SourceColumn="AvgPast" DataSetColumn="AvgPast" />
+              <Mapping SourceColumn="AvgRolling" DataSetColumn="AvgRolling" />
+              <Mapping SourceColumn="SFPerDay" DataSetColumn="SFPerDay" />
+              <Mapping SourceColumn="RunDate" DataSetColumn="RunDate" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="V_110_Master_Planning_AllPlantTableAdapter" GeneratorDataComponentClassName="V_110_Master_Planning_AllPlantTableAdapter" Name="V_110_Master_Planning_AllPlant" UserDataComponentName="V_110_Master_Planning_AllPlantTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="PlanningSConnectionString (MySettings)" DbObjectName="PlanningS.dbo.V_110_Master_Planning_AllPlant" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT [Group], Status, mmatno, mmateng, mStandardCap, [S/Day], Utilize, UR, ATP, QtyGIT, MinStock, MaxStock, [Days Sale], Request, OverMax, [P/Day], AvgPast, AvgRolling, SFPerDay, [Percent Min], [Percent Max], [Days Sale Min], [Days Sale Max] FROM dbo.V_110_Master_Planning_AllPlant</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Group" DataSetColumn="Group" />
+              <Mapping SourceColumn="Status" DataSetColumn="Status" />
+              <Mapping SourceColumn="mmatno" DataSetColumn="mmatno" />
+              <Mapping SourceColumn="mmateng" DataSetColumn="mmateng" />
+              <Mapping SourceColumn="mStandardCap" DataSetColumn="mStandardCap" />
+              <Mapping SourceColumn="S/Day" DataSetColumn="S/Day" />
+              <Mapping SourceColumn="Utilize" DataSetColumn="Utilize" />
+              <Mapping SourceColumn="UR" DataSetColumn="UR" />
+              <Mapping SourceColumn="ATP" DataSetColumn="ATP" />
+              <Mapping SourceColumn="QtyGIT" DataSetColumn="QtyGIT" />
+              <Mapping SourceColumn="MinStock" DataSetColumn="MinStock" />
+              <Mapping SourceColumn="MaxStock" DataSetColumn="MaxStock" />
+              <Mapping SourceColumn="Days Sale" DataSetColumn="Days Sale" />
+              <Mapping SourceColumn="Request" DataSetColumn="Request" />
+              <Mapping SourceColumn="OverMax" DataSetColumn="OverMax" />
+              <Mapping SourceColumn="P/Day" DataSetColumn="P/Day" />
+              <Mapping SourceColumn="AvgPast" DataSetColumn="AvgPast" />
+              <Mapping SourceColumn="AvgRolling" DataSetColumn="AvgRolling" />
+              <Mapping SourceColumn="SFPerDay" DataSetColumn="SFPerDay" />
+              <Mapping SourceColumn="Percent Min" DataSetColumn="Percent Min" />
+              <Mapping SourceColumn="Percent Max" DataSetColumn="Percent Max" />
+              <Mapping SourceColumn="Days Sale Min" DataSetColumn="Days Sale Min" />
+              <Mapping SourceColumn="Days Sale Max" DataSetColumn="Days Sale Max" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="V_110_Master_Planning_byPlantTableAdapter" GeneratorDataComponentClassName="V_110_Master_Planning_byPlantTableAdapter" Name="V_110_Master_Planning_byPlant" UserDataComponentName="V_110_Master_Planning_byPlantTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="PlanningSConnectionString (MySettings)" DbObjectName="PlanningS.dbo.V_110_Master_Planning_byPlant" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT [Group], Status, PlantName, mmatno, mmateng, mStandardCap, [S/Day], Utilize, UR, ATP, QtyGIT, MinStock, MaxStock, [Days Sale], Request, OverMax, [P/Day], AvgPast, AvgRolling, SFPerDay, [Percent Min], [Percent Max], [Days Sale Min], [Days Sale Max] FROM dbo.V_110_Master_Planning_byPlant</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Group" DataSetColumn="Group" />
+              <Mapping SourceColumn="Status" DataSetColumn="Status" />
+              <Mapping SourceColumn="PlantName" DataSetColumn="PlantName" />
+              <Mapping SourceColumn="mmatno" DataSetColumn="mmatno" />
+              <Mapping SourceColumn="mmateng" DataSetColumn="mmateng" />
+              <Mapping SourceColumn="mStandardCap" DataSetColumn="mStandardCap" />
+              <Mapping SourceColumn="S/Day" DataSetColumn="S/Day" />
+              <Mapping SourceColumn="Utilize" DataSetColumn="Utilize" />
+              <Mapping SourceColumn="UR" DataSetColumn="UR" />
+              <Mapping SourceColumn="ATP" DataSetColumn="ATP" />
+              <Mapping SourceColumn="QtyGIT" DataSetColumn="QtyGIT" />
+              <Mapping SourceColumn="MinStock" DataSetColumn="MinStock" />
+              <Mapping SourceColumn="MaxStock" DataSetColumn="MaxStock" />
+              <Mapping SourceColumn="Days Sale" DataSetColumn="Days Sale" />
+              <Mapping SourceColumn="Request" DataSetColumn="Request" />
+              <Mapping SourceColumn="OverMax" DataSetColumn="OverMax" />
+              <Mapping SourceColumn="P/Day" DataSetColumn="P/Day" />
+              <Mapping SourceColumn="AvgPast" DataSetColumn="AvgPast" />
+              <Mapping SourceColumn="AvgRolling" DataSetColumn="AvgRolling" />
+              <Mapping SourceColumn="SFPerDay" DataSetColumn="SFPerDay" />
+              <Mapping SourceColumn="Percent Min" DataSetColumn="Percent Min" />
+              <Mapping SourceColumn="Percent Max" DataSetColumn="Percent Max" />
+              <Mapping SourceColumn="Days Sale Min" DataSetColumn="Days Sale Min" />
+              <Mapping SourceColumn="Days Sale Max" DataSetColumn="Days Sale Max" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="V_110_StockBalance90DaysTableAdapter" GeneratorDataComponentClassName="V_110_StockBalance90DaysTableAdapter" Name="V_110_StockBalance90Days" UserDataComponentName="V_110_StockBalance90DaysTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="PlanningSConnectionString (MySettings)" DbObjectName="PlanningS.dbo.V_110_StockBalance90Days" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT caldate, mmatno, ATP FROM dbo.V_110_StockBalance90Days</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="caldate" DataSetColumn="caldate" />
+              <Mapping SourceColumn="mmatno" DataSetColumn="mmatno" />
+              <Mapping SourceColumn="ATP" DataSetColumn="ATP" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="V_410_KSB1DetailCostTableAdapter" GeneratorDataComponentClassName="V_410_KSB1DetailCostTableAdapter" Name="V_410_KSB1DetailCost" UserDataComponentName="V_410_KSB1DetailCostTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="PlanningSConnectionString (MySettings)" DbObjectName="PlanningS.dbo.V_410_KSB1DetailCost" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT [Posting Date], [Document No], Account, [Cost center], Qty, Amount, [Header text], Material, [Mat Name], [PO Text], Text, [PO No], [IO No] FROM dbo.V_410_KSB1DetailCost</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Posting Date" DataSetColumn="Posting Date" />
+              <Mapping SourceColumn="Document No" DataSetColumn="Document No" />
+              <Mapping SourceColumn="Account" DataSetColumn="Account" />
+              <Mapping SourceColumn="Cost center" DataSetColumn="Cost center" />
+              <Mapping SourceColumn="Qty" DataSetColumn="Qty" />
+              <Mapping SourceColumn="Amount" DataSetColumn="Amount" />
+              <Mapping SourceColumn="Header text" DataSetColumn="Header text" />
+              <Mapping SourceColumn="Material" DataSetColumn="Material" />
+              <Mapping SourceColumn="Mat Name" DataSetColumn="Mat Name" />
+              <Mapping SourceColumn="PO Text" DataSetColumn="PO Text" />
+              <Mapping SourceColumn="Text" DataSetColumn="Text" />
+              <Mapping SourceColumn="PO No" DataSetColumn="PO No" />
+              <Mapping SourceColumn="IO No" DataSetColumn="IO No" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="V_510_TransferPlantTableAdapter" GeneratorDataComponentClassName="V_510_TransferPlantTableAdapter" Name="V_510_TransferPlant" UserDataComponentName="V_510_TransferPlantTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="PlanningSConnectionString (MySettings)" DbObjectName="PlanningS.dbo.V_510_TransferPlant" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT mmatno, mmateng, RY, SB, [Days Sale Min], [Days Sale Max], [S/Day] FROM dbo.V_510_TransferPlant</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="mmatno" DataSetColumn="mmatno" />
+              <Mapping SourceColumn="mmateng" DataSetColumn="mmateng" />
+              <Mapping SourceColumn="RY" DataSetColumn="RY" />
+              <Mapping SourceColumn="SB" DataSetColumn="SB" />
+              <Mapping SourceColumn="Days Sale Min" DataSetColumn="Days Sale Min" />
+              <Mapping SourceColumn="Days Sale Max" DataSetColumn="Days Sale Max" />
+              <Mapping SourceColumn="S/Day" DataSetColumn="S/Day" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="V_900_ManageStockTableAdapter" GeneratorDataComponentClassName="V_900_ManageStockTableAdapter" Name="V_900_ManageStock" UserDataComponentName="V_900_ManageStockTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="PlanningSConnectionString (MySettings)" DbObjectName="PlanningS.dbo.V_900_ManageStock" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT caldate, mplant_location, Mat, We FROM dbo.V_900_ManageStock</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="caldate" DataSetColumn="caldate" />
+              <Mapping SourceColumn="mplant_location" DataSetColumn="mplant_location" />
+              <Mapping SourceColumn="Mat" DataSetColumn="Mat" />
+              <Mapping SourceColumn="We" DataSetColumn="We" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="V_BOI_Split_CostTableAdapter" GeneratorDataComponentClassName="V_BOI_Split_CostTableAdapter" Name="V_BOI_Split_Cost" UserDataComponentName="V_BOI_Split_CostTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="PlanningSConnectionString (MySettings)" DbObjectName="PlanningS.dbo.V_BOI_Split_Cost" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT mcompcode, mmonth, myear, mcostelement, mmatno, qty, amount, [per unit] FROM dbo.V_BOI_Split_Cost</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="mcompcode" DataSetColumn="mcompcode" />
+              <Mapping SourceColumn="mmonth" DataSetColumn="mmonth" />
+              <Mapping SourceColumn="myear" DataSetColumn="myear" />
+              <Mapping SourceColumn="mcostelement" DataSetColumn="mcostelement" />
+              <Mapping SourceColumn="mmatno" DataSetColumn="mmatno" />
+              <Mapping SourceColumn="qty" DataSetColumn="qty" />
+              <Mapping SourceColumn="amount" DataSetColumn="amount" />
+              <Mapping SourceColumn="per unit" DataSetColumn="per unit" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="V_Sales3MonthsDetailsTableAdapter" GeneratorDataComponentClassName="V_Sales3MonthsDetailsTableAdapter" Name="V_Sales3MonthsDetails" UserDataComponentName="V_Sales3MonthsDetailsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="PlanningSConnectionString (MySettings)" DbObjectName="PlanningS.dbo.V_Sales3MonthsDetails" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT PlantName, caldate, mmatno, ATP, Weight, mplant_salezone, Comp FROM dbo.V_Sales3MonthsDetails</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="PlantName" DataSetColumn="PlantName" />
+              <Mapping SourceColumn="caldate" DataSetColumn="caldate" />
+              <Mapping SourceColumn="mmatno" DataSetColumn="mmatno" />
+              <Mapping SourceColumn="ATP" DataSetColumn="ATP" />
+              <Mapping SourceColumn="Weight" DataSetColumn="Weight" />
+              <Mapping SourceColumn="mplant_salezone" DataSetColumn="mplant_salezone" />
+              <Mapping SourceColumn="Comp" DataSetColumn="Comp" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="PlanningS_View" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="PlanningS_View" msprop:Generator_UserDSName="PlanningS_View">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="GI_Doc_print" msprop:Generator_TableClassName="GI_Doc_printDataTable" msprop:Generator_TableVarName="tableGI_Doc_print" msprop:Generator_TablePropName="GI_Doc_print" msprop:Generator_RowDeletingName="GI_Doc_printRowDeleting" msprop:Generator_RowChangingName="GI_Doc_printRowChanging" msprop:Generator_RowEvHandlerName="GI_Doc_printRowChangeEventHandler" msprop:Generator_RowDeletedName="GI_Doc_printRowDeleted" msprop:Generator_UserTableName="GI_Doc_print" msprop:Generator_RowChangedName="GI_Doc_printRowChanged" msprop:Generator_RowEvArgName="GI_Doc_printRowChangeEvent" msprop:Generator_RowClassName="GI_Doc_printRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Uname" msprop:Generator_ColumnVarNameInTable="columnUname" msprop:Generator_ColumnPropNameInRow="Uname" msprop:Generator_ColumnPropNameInTable="UnameColumn" msprop:Generator_UserColumnName="Uname" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Headertext" msprop:Generator_ColumnVarNameInTable="columnHeadertext" msprop:Generator_ColumnPropNameInRow="Headertext" msprop:Generator_ColumnPropNameInTable="HeadertextColumn" msprop:Generator_UserColumnName="Headertext" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="itemNo" msprop:Generator_ColumnVarNameInTable="columnitemNo" msprop:Generator_ColumnPropNameInRow="itemNo" msprop:Generator_ColumnPropNameInTable="itemNoColumn" msprop:Generator_UserColumnName="itemNo" type="xs:int" minOccurs="0" />
+              <xs:element name="Productcode" msprop:Generator_ColumnVarNameInTable="columnProductcode" msprop:Generator_ColumnPropNameInRow="Productcode" msprop:Generator_ColumnPropNameInTable="ProductcodeColumn" msprop:Generator_UserColumnName="Productcode" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="18" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="mmateng" msprop:Generator_ColumnVarNameInTable="columnmmateng" msprop:Generator_ColumnPropNameInRow="mmateng" msprop:Generator_ColumnPropNameInTable="mmatengColumn" msprop:Generator_UserColumnName="mmateng" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="OrderQty" msprop:Generator_ColumnVarNameInTable="columnOrderQty" msprop:Generator_ColumnPropNameInRow="OrderQty" msprop:Generator_ColumnPropNameInTable="OrderQtyColumn" msprop:Generator_UserColumnName="OrderQty" type="xs:decimal" minOccurs="0" />
+              <xs:element name="GLAccount" msprop:Generator_ColumnVarNameInTable="columnGLAccount" msprop:Generator_ColumnPropNameInRow="GLAccount" msprop:Generator_ColumnPropNameInTable="GLAccountColumn" msprop:Generator_UserColumnName="GLAccount" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CostCenter" msprop:Generator_ColumnVarNameInTable="columnCostCenter" msprop:Generator_ColumnPropNameInRow="CostCenter" msprop:Generator_ColumnPropNameInTable="CostCenterColumn" msprop:Generator_UserColumnName="CostCenter" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="mmatthai" msprop:Generator_ColumnVarNameInTable="columnmmatthai" msprop:Generator_ColumnPropNameInRow="mmatthai" msprop:Generator_ColumnPropNameInTable="mmatthaiColumn" msprop:Generator_UserColumnName="mmatthai" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="name" msprop:Generator_TableClassName="nameDataTable" msprop:Generator_TableVarName="tablename" msprop:Generator_TablePropName="name" msprop:Generator_RowDeletingName="nameRowDeleting" msprop:Generator_RowChangingName="nameRowChanging" msprop:Generator_RowEvHandlerName="nameRowChangeEventHandler" msprop:Generator_RowDeletedName="nameRowDeleted" msprop:Generator_UserTableName="name" msprop:Generator_RowChangedName="nameRowChanged" msprop:Generator_RowEvArgName="nameRowChangeEvent" msprop:Generator_RowClassName="nameRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Thai_name" msprop:Generator_ColumnVarNameInTable="columnThai_name" msprop:Generator_ColumnPropNameInRow="Thai_name" msprop:Generator_ColumnPropNameInTable="Thai_nameColumn" msprop:Generator_UserColumnName="Thai_name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Jap_name" msprop:Generator_ColumnVarNameInTable="columnJap_name" msprop:Generator_ColumnPropNameInRow="Jap_name" msprop:Generator_ColumnPropNameInTable="Jap_nameColumn" msprop:Generator_UserColumnName="Jap_name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="skill" msprop:Generator_TableClassName="skillDataTable" msprop:Generator_TableVarName="tableskill" msprop:Generator_TablePropName="skill" msprop:Generator_RowDeletingName="skillRowDeleting" msprop:Generator_RowChangingName="skillRowChanging" msprop:Generator_RowEvHandlerName="skillRowChangeEventHandler" msprop:Generator_RowDeletedName="skillRowDeleted" msprop:Generator_UserTableName="skill" msprop:Generator_RowChangedName="skillRowChanged" msprop:Generator_RowEvArgName="skillRowChangeEvent" msprop:Generator_RowClassName="skillRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Thai_skill" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnThai_skill" msprop:Generator_ColumnPropNameInRow="Thai_skill" msprop:Generator_ColumnPropNameInTable="Thai_skillColumn" msprop:Generator_UserColumnName="Thai_skill" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Jap_skill" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnJap_skill" msprop:Generator_ColumnPropNameInRow="Jap_skill" msprop:Generator_ColumnPropNameInTable="Jap_skillColumn" msprop:Generator_UserColumnName="Jap_skill" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="skill_sync_view" msprop:Generator_TableClassName="skill_sync_viewDataTable" msprop:Generator_TableVarName="tableskill_sync_view" msprop:Generator_TablePropName="skill_sync_view" msprop:Generator_RowDeletingName="skill_sync_viewRowDeleting" msprop:Generator_RowChangingName="skill_sync_viewRowChanging" msprop:Generator_RowEvHandlerName="skill_sync_viewRowChangeEventHandler" msprop:Generator_RowDeletedName="skill_sync_viewRowDeleted" msprop:Generator_UserTableName="skill_sync_view" msprop:Generator_RowChangedName="skill_sync_viewRowChanged" msprop:Generator_RowEvArgName="skill_sync_viewRowChangeEvent" msprop:Generator_RowClassName="skill_sync_viewRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="skill" msprop:Generator_ColumnVarNameInTable="columnskill" msprop:Generator_ColumnPropNameInRow="skill" msprop:Generator_ColumnPropNameInTable="skillColumn" msprop:Generator_UserColumnName="skill" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Main_skill" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnMain_skill" msprop:Generator_ColumnPropNameInRow="Main_skill" msprop:Generator_ColumnPropNameInTable="Main_skillColumn" msprop:Generator_UserColumnName="Main_skill" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Atk_skill" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnAtk_skill" msprop:Generator_ColumnPropNameInRow="Atk_skill" msprop:Generator_ColumnPropNameInTable="Atk_skillColumn" msprop:Generator_UserColumnName="Atk_skill" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Def_skill" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnDef_skill" msprop:Generator_ColumnPropNameInRow="Def_skill" msprop:Generator_ColumnPropNameInTable="Def_skillColumn" msprop:Generator_UserColumnName="Def_skill" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Int_skill" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnInt_skill" msprop:Generator_ColumnPropNameInRow="Int_skill" msprop:Generator_ColumnPropNameInTable="Int_skillColumn" msprop:Generator_UserColumnName="Int_skill" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Hide_skill" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnHide_skill" msprop:Generator_ColumnPropNameInRow="Hide_skill" msprop:Generator_ColumnPropNameInTable="Hide_skillColumn" msprop:Generator_UserColumnName="Hide_skill" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="V_100_DataPlanning" msprop:Generator_TableClassName="V_100_DataPlanningDataTable" msprop:Generator_TableVarName="tableV_100_DataPlanning" msprop:Generator_TablePropName="V_100_DataPlanning" msprop:Generator_RowDeletingName="V_100_DataPlanningRowDeleting" msprop:Generator_RowChangingName="V_100_DataPlanningRowChanging" msprop:Generator_RowEvHandlerName="V_100_DataPlanningRowChangeEventHandler" msprop:Generator_RowDeletedName="V_100_DataPlanningRowDeleted" msprop:Generator_UserTableName="V_100_DataPlanning" msprop:Generator_RowChangedName="V_100_DataPlanningRowChanged" msprop:Generator_RowEvArgName="V_100_DataPlanningRowChangeEvent" msprop:Generator_RowClassName="V_100_DataPlanningRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PlantName" msprop:Generator_ColumnVarNameInTable="columnPlantName" msprop:Generator_ColumnPropNameInRow="PlantName" msprop:Generator_ColumnPropNameInTable="PlantNameColumn" msprop:Generator_UserColumnName="PlantName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="mmatno" msprop:Generator_ColumnVarNameInTable="columnmmatno" msprop:Generator_ColumnPropNameInRow="mmatno" msprop:Generator_ColumnPropNameInTable="mmatnoColumn" msprop:Generator_UserColumnName="mmatno" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="18" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UR" msprop:Generator_ColumnVarNameInTable="columnUR" msprop:Generator_ColumnPropNameInRow="UR" msprop:Generator_ColumnPropNameInTable="URColumn" msprop:Generator_UserColumnName="UR" type="xs:double" minOccurs="0" />
+              <xs:element name="ATP" msprop:Generator_ColumnVarNameInTable="columnATP" msprop:Generator_ColumnPropNameInRow="ATP" msprop:Generator_ColumnPropNameInTable="ATPColumn" msprop:Generator_UserColumnName="ATP" type="xs:double" minOccurs="0" />
+              <xs:element name="AvgPast" msprop:Generator_ColumnVarNameInTable="columnAvgPast" msprop:Generator_ColumnPropNameInRow="AvgPast" msprop:Generator_ColumnPropNameInTable="AvgPastColumn" msprop:Generator_UserColumnName="AvgPast" type="xs:decimal" />
+              <xs:element name="AvgRolling" msprop:Generator_ColumnVarNameInTable="columnAvgRolling" msprop:Generator_ColumnPropNameInRow="AvgRolling" msprop:Generator_ColumnPropNameInTable="AvgRollingColumn" msprop:Generator_UserColumnName="AvgRolling" type="xs:decimal" />
+              <xs:element name="SFPerDay" msprop:Generator_ColumnVarNameInTable="columnSFPerDay" msprop:Generator_ColumnPropNameInRow="SFPerDay" msprop:Generator_ColumnPropNameInTable="SFPerDayColumn" msprop:Generator_UserColumnName="SFPerDay" type="xs:int" />
+              <xs:element name="RunDate" msprop:Generator_ColumnVarNameInTable="columnRunDate" msprop:Generator_ColumnPropNameInRow="RunDate" msprop:Generator_ColumnPropNameInTable="RunDateColumn" msprop:Generator_UserColumnName="RunDate" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="V_110_Master_Planning_AllPlant" msprop:Generator_TableClassName="V_110_Master_Planning_AllPlantDataTable" msprop:Generator_TableVarName="tableV_110_Master_Planning_AllPlant" msprop:Generator_TablePropName="V_110_Master_Planning_AllPlant" msprop:Generator_RowDeletingName="V_110_Master_Planning_AllPlantRowDeleting" msprop:Generator_RowChangingName="V_110_Master_Planning_AllPlantRowChanging" msprop:Generator_RowEvHandlerName="V_110_Master_Planning_AllPlantRowChangeEventHandler" msprop:Generator_RowDeletedName="V_110_Master_Planning_AllPlantRowDeleted" msprop:Generator_UserTableName="V_110_Master_Planning_AllPlant" msprop:Generator_RowChangedName="V_110_Master_Planning_AllPlantRowChanged" msprop:Generator_RowEvArgName="V_110_Master_Planning_AllPlantRowChangeEvent" msprop:Generator_RowClassName="V_110_Master_Planning_AllPlantRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Group" msprop:Generator_ColumnVarNameInTable="columnGroup" msprop:Generator_ColumnPropNameInRow="Group" msprop:Generator_ColumnPropNameInTable="GroupColumn" msprop:Generator_UserColumnName="Group" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Status" msprop:Generator_ColumnVarNameInTable="columnStatus" msprop:Generator_ColumnPropNameInRow="Status" msprop:Generator_ColumnPropNameInTable="StatusColumn" msprop:Generator_UserColumnName="Status" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="mmatno" msprop:Generator_ColumnVarNameInTable="columnmmatno" msprop:Generator_ColumnPropNameInRow="mmatno" msprop:Generator_ColumnPropNameInTable="mmatnoColumn" msprop:Generator_UserColumnName="mmatno" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="18" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="mmateng" msprop:Generator_ColumnVarNameInTable="columnmmateng" msprop:Generator_ColumnPropNameInRow="mmateng" msprop:Generator_ColumnPropNameInTable="mmatengColumn" msprop:Generator_UserColumnName="mmateng" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="mStandardCap" msprop:Generator_ColumnVarNameInTable="columnmStandardCap" msprop:Generator_ColumnPropNameInRow="mStandardCap" msprop:Generator_ColumnPropNameInTable="mStandardCapColumn" msprop:Generator_UserColumnName="mStandardCap" type="xs:decimal" minOccurs="0" />
+              <xs:element name="S_x002F_Day" msprop:Generator_ColumnVarNameInTable="_columnS_Day" msprop:Generator_ColumnPropNameInRow="_S_Day" msprop:Generator_ColumnPropNameInTable="_S_DayColumn" msprop:Generator_UserColumnName="S/Day" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Utilize" msprop:Generator_ColumnVarNameInTable="columnUtilize" msprop:Generator_ColumnPropNameInRow="Utilize" msprop:Generator_ColumnPropNameInTable="UtilizeColumn" msprop:Generator_UserColumnName="Utilize" type="xs:decimal" minOccurs="0" />
+              <xs:element name="UR" msprop:Generator_ColumnVarNameInTable="columnUR" msprop:Generator_ColumnPropNameInRow="UR" msprop:Generator_ColumnPropNameInTable="URColumn" msprop:Generator_UserColumnName="UR" type="xs:double" minOccurs="0" />
+              <xs:element name="ATP" msprop:Generator_ColumnVarNameInTable="columnATP" msprop:Generator_ColumnPropNameInRow="ATP" msprop:Generator_ColumnPropNameInTable="ATPColumn" msprop:Generator_UserColumnName="ATP" type="xs:double" minOccurs="0" />
+              <xs:element name="QtyGIT" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnQtyGIT" msprop:Generator_ColumnPropNameInRow="QtyGIT" msprop:Generator_ColumnPropNameInTable="QtyGITColumn" msprop:Generator_UserColumnName="QtyGIT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MinStock" msprop:Generator_ColumnVarNameInTable="columnMinStock" msprop:Generator_ColumnPropNameInRow="MinStock" msprop:Generator_ColumnPropNameInTable="MinStockColumn" msprop:Generator_UserColumnName="MinStock" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MaxStock" msprop:Generator_ColumnVarNameInTable="columnMaxStock" msprop:Generator_ColumnPropNameInRow="MaxStock" msprop:Generator_ColumnPropNameInTable="MaxStockColumn" msprop:Generator_UserColumnName="MaxStock" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Days_x0020_Sale" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnDays_Sale" msprop:Generator_ColumnPropNameInRow="Days_Sale" msprop:Generator_ColumnPropNameInTable="Days_SaleColumn" msprop:Generator_UserColumnName="Days Sale" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Request" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnRequest" msprop:Generator_ColumnPropNameInRow="Request" msprop:Generator_ColumnPropNameInTable="RequestColumn" msprop:Generator_UserColumnName="Request" type="xs:double" minOccurs="0" />
+              <xs:element name="OverMax" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnOverMax" msprop:Generator_ColumnPropNameInRow="OverMax" msprop:Generator_ColumnPropNameInTable="OverMaxColumn" msprop:Generator_UserColumnName="OverMax" type="xs:double" minOccurs="0" />
+              <xs:element name="P_x002F_Day" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="_columnP_Day" msprop:Generator_ColumnPropNameInRow="_P_Day" msprop:Generator_ColumnPropNameInTable="_P_DayColumn" msprop:Generator_UserColumnName="P/Day" type="xs:decimal" minOccurs="0" />
+              <xs:element name="AvgPast" msprop:Generator_ColumnVarNameInTable="columnAvgPast" msprop:Generator_ColumnPropNameInRow="AvgPast" msprop:Generator_ColumnPropNameInTable="AvgPastColumn" msprop:Generator_UserColumnName="AvgPast" type="xs:decimal" minOccurs="0" />
+              <xs:element name="AvgRolling" msprop:Generator_ColumnVarNameInTable="columnAvgRolling" msprop:Generator_ColumnPropNameInRow="AvgRolling" msprop:Generator_ColumnPropNameInTable="AvgRollingColumn" msprop:Generator_UserColumnName="AvgRolling" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SFPerDay" msprop:Generator_ColumnVarNameInTable="columnSFPerDay" msprop:Generator_ColumnPropNameInRow="SFPerDay" msprop:Generator_ColumnPropNameInTable="SFPerDayColumn" msprop:Generator_UserColumnName="SFPerDay" type="xs:int" minOccurs="0" />
+              <xs:element name="Percent_x0020_Min" msprop:Generator_ColumnVarNameInTable="columnPercent_Min" msprop:Generator_ColumnPropNameInRow="Percent_Min" msprop:Generator_ColumnPropNameInTable="Percent_MinColumn" msprop:Generator_UserColumnName="Percent Min" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Percent_x0020_Max" msprop:Generator_ColumnVarNameInTable="columnPercent_Max" msprop:Generator_ColumnPropNameInRow="Percent_Max" msprop:Generator_ColumnPropNameInTable="Percent_MaxColumn" msprop:Generator_UserColumnName="Percent Max" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Days_x0020_Sale_x0020_Min" msprop:Generator_ColumnVarNameInTable="columnDays_Sale_Min" msprop:Generator_ColumnPropNameInRow="Days_Sale_Min" msprop:Generator_ColumnPropNameInTable="Days_Sale_MinColumn" msprop:Generator_UserColumnName="Days Sale Min" type="xs:int" minOccurs="0" />
+              <xs:element name="Days_x0020_Sale_x0020_Max" msprop:Generator_ColumnVarNameInTable="columnDays_Sale_Max" msprop:Generator_ColumnPropNameInRow="Days_Sale_Max" msprop:Generator_ColumnPropNameInTable="Days_Sale_MaxColumn" msprop:Generator_UserColumnName="Days Sale Max" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="V_110_Master_Planning_byPlant" msprop:Generator_TableClassName="V_110_Master_Planning_byPlantDataTable" msprop:Generator_TableVarName="tableV_110_Master_Planning_byPlant" msprop:Generator_TablePropName="V_110_Master_Planning_byPlant" msprop:Generator_RowDeletingName="V_110_Master_Planning_byPlantRowDeleting" msprop:Generator_RowChangingName="V_110_Master_Planning_byPlantRowChanging" msprop:Generator_RowEvHandlerName="V_110_Master_Planning_byPlantRowChangeEventHandler" msprop:Generator_RowDeletedName="V_110_Master_Planning_byPlantRowDeleted" msprop:Generator_UserTableName="V_110_Master_Planning_byPlant" msprop:Generator_RowChangedName="V_110_Master_Planning_byPlantRowChanged" msprop:Generator_RowEvArgName="V_110_Master_Planning_byPlantRowChangeEvent" msprop:Generator_RowClassName="V_110_Master_Planning_byPlantRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Group" msprop:Generator_ColumnVarNameInTable="columnGroup" msprop:Generator_ColumnPropNameInRow="Group" msprop:Generator_ColumnPropNameInTable="GroupColumn" msprop:Generator_UserColumnName="Group" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Status" msprop:Generator_ColumnVarNameInTable="columnStatus" msprop:Generator_ColumnPropNameInRow="Status" msprop:Generator_ColumnPropNameInTable="StatusColumn" msprop:Generator_UserColumnName="Status" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PlantName" msprop:Generator_ColumnVarNameInTable="columnPlantName" msprop:Generator_ColumnPropNameInRow="PlantName" msprop:Generator_ColumnPropNameInTable="PlantNameColumn" msprop:Generator_UserColumnName="PlantName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="mmatno" msprop:Generator_ColumnVarNameInTable="columnmmatno" msprop:Generator_ColumnPropNameInRow="mmatno" msprop:Generator_ColumnPropNameInTable="mmatnoColumn" msprop:Generator_UserColumnName="mmatno" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="18" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="mmateng" msprop:Generator_ColumnVarNameInTable="columnmmateng" msprop:Generator_ColumnPropNameInRow="mmateng" msprop:Generator_ColumnPropNameInTable="mmatengColumn" msprop:Generator_UserColumnName="mmateng" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="mStandardCap" msprop:Generator_ColumnVarNameInTable="columnmStandardCap" msprop:Generator_ColumnPropNameInRow="mStandardCap" msprop:Generator_ColumnPropNameInTable="mStandardCapColumn" msprop:Generator_UserColumnName="mStandardCap" type="xs:decimal" minOccurs="0" />
+              <xs:element name="S_x002F_Day" msprop:Generator_ColumnVarNameInTable="_columnS_Day" msprop:Generator_ColumnPropNameInRow="_S_Day" msprop:Generator_ColumnPropNameInTable="_S_DayColumn" msprop:Generator_UserColumnName="S/Day" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Utilize" msprop:Generator_ColumnVarNameInTable="columnUtilize" msprop:Generator_ColumnPropNameInRow="Utilize" msprop:Generator_ColumnPropNameInTable="UtilizeColumn" msprop:Generator_UserColumnName="Utilize" type="xs:decimal" minOccurs="0" />
+              <xs:element name="UR" msprop:Generator_ColumnVarNameInTable="columnUR" msprop:Generator_ColumnPropNameInRow="UR" msprop:Generator_ColumnPropNameInTable="URColumn" msprop:Generator_UserColumnName="UR" type="xs:double" minOccurs="0" />
+              <xs:element name="ATP" msprop:Generator_ColumnVarNameInTable="columnATP" msprop:Generator_ColumnPropNameInRow="ATP" msprop:Generator_ColumnPropNameInTable="ATPColumn" msprop:Generator_UserColumnName="ATP" type="xs:double" minOccurs="0" />
+              <xs:element name="QtyGIT" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnQtyGIT" msprop:Generator_ColumnPropNameInRow="QtyGIT" msprop:Generator_ColumnPropNameInTable="QtyGITColumn" msprop:Generator_UserColumnName="QtyGIT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MinStock" msprop:Generator_ColumnVarNameInTable="columnMinStock" msprop:Generator_ColumnPropNameInRow="MinStock" msprop:Generator_ColumnPropNameInTable="MinStockColumn" msprop:Generator_UserColumnName="MinStock" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MaxStock" msprop:Generator_ColumnVarNameInTable="columnMaxStock" msprop:Generator_ColumnPropNameInRow="MaxStock" msprop:Generator_ColumnPropNameInTable="MaxStockColumn" msprop:Generator_UserColumnName="MaxStock" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Days_x0020_Sale" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnDays_Sale" msprop:Generator_ColumnPropNameInRow="Days_Sale" msprop:Generator_ColumnPropNameInTable="Days_SaleColumn" msprop:Generator_UserColumnName="Days Sale" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Request" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnRequest" msprop:Generator_ColumnPropNameInRow="Request" msprop:Generator_ColumnPropNameInTable="RequestColumn" msprop:Generator_UserColumnName="Request" type="xs:double" minOccurs="0" />
+              <xs:element name="OverMax" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnOverMax" msprop:Generator_ColumnPropNameInRow="OverMax" msprop:Generator_ColumnPropNameInTable="OverMaxColumn" msprop:Generator_UserColumnName="OverMax" type="xs:double" minOccurs="0" />
+              <xs:element name="P_x002F_Day" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="_columnP_Day" msprop:Generator_ColumnPropNameInRow="_P_Day" msprop:Generator_ColumnPropNameInTable="_P_DayColumn" msprop:Generator_UserColumnName="P/Day" type="xs:decimal" minOccurs="0" />
+              <xs:element name="AvgPast" msprop:Generator_ColumnVarNameInTable="columnAvgPast" msprop:Generator_ColumnPropNameInRow="AvgPast" msprop:Generator_ColumnPropNameInTable="AvgPastColumn" msprop:Generator_UserColumnName="AvgPast" type="xs:decimal" />
+              <xs:element name="AvgRolling" msprop:Generator_ColumnVarNameInTable="columnAvgRolling" msprop:Generator_ColumnPropNameInRow="AvgRolling" msprop:Generator_ColumnPropNameInTable="AvgRollingColumn" msprop:Generator_UserColumnName="AvgRolling" type="xs:decimal" />
+              <xs:element name="SFPerDay" msprop:Generator_ColumnVarNameInTable="columnSFPerDay" msprop:Generator_ColumnPropNameInRow="SFPerDay" msprop:Generator_ColumnPropNameInTable="SFPerDayColumn" msprop:Generator_UserColumnName="SFPerDay" type="xs:int" />
+              <xs:element name="Percent_x0020_Min" msprop:Generator_ColumnVarNameInTable="columnPercent_Min" msprop:Generator_ColumnPropNameInRow="Percent_Min" msprop:Generator_ColumnPropNameInTable="Percent_MinColumn" msprop:Generator_UserColumnName="Percent Min" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Percent_x0020_Max" msprop:Generator_ColumnVarNameInTable="columnPercent_Max" msprop:Generator_ColumnPropNameInRow="Percent_Max" msprop:Generator_ColumnPropNameInTable="Percent_MaxColumn" msprop:Generator_UserColumnName="Percent Max" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Days_x0020_Sale_x0020_Min" msprop:Generator_ColumnVarNameInTable="columnDays_Sale_Min" msprop:Generator_ColumnPropNameInRow="Days_Sale_Min" msprop:Generator_ColumnPropNameInTable="Days_Sale_MinColumn" msprop:Generator_UserColumnName="Days Sale Min" type="xs:int" minOccurs="0" />
+              <xs:element name="Days_x0020_Sale_x0020_Max" msprop:Generator_ColumnVarNameInTable="columnDays_Sale_Max" msprop:Generator_ColumnPropNameInRow="Days_Sale_Max" msprop:Generator_ColumnPropNameInTable="Days_Sale_MaxColumn" msprop:Generator_UserColumnName="Days Sale Max" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="V_110_StockBalance90Days" msprop:Generator_TableClassName="V_110_StockBalance90DaysDataTable" msprop:Generator_TableVarName="tableV_110_StockBalance90Days" msprop:Generator_TablePropName="V_110_StockBalance90Days" msprop:Generator_RowDeletingName="V_110_StockBalance90DaysRowDeleting" msprop:Generator_RowChangingName="V_110_StockBalance90DaysRowChanging" msprop:Generator_RowEvHandlerName="V_110_StockBalance90DaysRowChangeEventHandler" msprop:Generator_RowDeletedName="V_110_StockBalance90DaysRowDeleted" msprop:Generator_UserTableName="V_110_StockBalance90Days" msprop:Generator_RowChangedName="V_110_StockBalance90DaysRowChanged" msprop:Generator_RowEvArgName="V_110_StockBalance90DaysRowChangeEvent" msprop:Generator_RowClassName="V_110_StockBalance90DaysRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="caldate" msprop:Generator_ColumnVarNameInTable="columncaldate" msprop:Generator_ColumnPropNameInRow="caldate" msprop:Generator_ColumnPropNameInTable="caldateColumn" msprop:Generator_UserColumnName="caldate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="mmatno" msprop:Generator_ColumnVarNameInTable="columnmmatno" msprop:Generator_ColumnPropNameInRow="mmatno" msprop:Generator_ColumnPropNameInTable="mmatnoColumn" msprop:Generator_UserColumnName="mmatno" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="18" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ATP" msprop:Generator_ColumnVarNameInTable="columnATP" msprop:Generator_ColumnPropNameInRow="ATP" msprop:Generator_ColumnPropNameInTable="ATPColumn" msprop:Generator_UserColumnName="ATP" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="V_410_KSB1DetailCost" msprop:Generator_TableClassName="V_410_KSB1DetailCostDataTable" msprop:Generator_TableVarName="tableV_410_KSB1DetailCost" msprop:Generator_TablePropName="V_410_KSB1DetailCost" msprop:Generator_RowDeletingName="V_410_KSB1DetailCostRowDeleting" msprop:Generator_RowChangingName="V_410_KSB1DetailCostRowChanging" msprop:Generator_RowEvHandlerName="V_410_KSB1DetailCostRowChangeEventHandler" msprop:Generator_RowDeletedName="V_410_KSB1DetailCostRowDeleted" msprop:Generator_UserTableName="V_410_KSB1DetailCost" msprop:Generator_RowChangedName="V_410_KSB1DetailCostRowChanged" msprop:Generator_RowEvArgName="V_410_KSB1DetailCostRowChangeEvent" msprop:Generator_RowClassName="V_410_KSB1DetailCostRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Posting_x0020_Date" msprop:Generator_ColumnVarNameInTable="columnPosting_Date" msprop:Generator_ColumnPropNameInRow="Posting_Date" msprop:Generator_ColumnPropNameInTable="Posting_DateColumn" msprop:Generator_UserColumnName="Posting Date" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Document_x0020_No" msprop:Generator_ColumnVarNameInTable="columnDocument_No" msprop:Generator_ColumnPropNameInRow="Document_No" msprop:Generator_ColumnPropNameInTable="Document_NoColumn" msprop:Generator_UserColumnName="Document No" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Account" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnAccount" msprop:Generator_ColumnPropNameInRow="Account" msprop:Generator_ColumnPropNameInTable="AccountColumn" msprop:Generator_UserColumnName="Account" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Cost_x0020_center" msprop:Generator_ColumnVarNameInTable="columnCost_center" msprop:Generator_ColumnPropNameInRow="Cost_center" msprop:Generator_ColumnPropNameInTable="Cost_centerColumn" msprop:Generator_UserColumnName="Cost center" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Qty" msprop:Generator_ColumnVarNameInTable="columnQty" msprop:Generator_ColumnPropNameInRow="Qty" msprop:Generator_ColumnPropNameInTable="QtyColumn" msprop:Generator_UserColumnName="Qty" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Amount" msprop:Generator_ColumnVarNameInTable="columnAmount" msprop:Generator_ColumnPropNameInRow="Amount" msprop:Generator_ColumnPropNameInTable="AmountColumn" msprop:Generator_UserColumnName="Amount" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Header_x0020_text" msprop:Generator_ColumnVarNameInTable="columnHeader_text" msprop:Generator_ColumnPropNameInRow="Header_text" msprop:Generator_ColumnPropNameInTable="Header_textColumn" msprop:Generator_UserColumnName="Header text" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Material" msprop:Generator_ColumnVarNameInTable="columnMaterial" msprop:Generator_ColumnPropNameInRow="Material" msprop:Generator_ColumnPropNameInTable="MaterialColumn" msprop:Generator_UserColumnName="Material" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="18" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Mat_x0020_Name" msprop:Generator_ColumnVarNameInTable="columnMat_Name" msprop:Generator_ColumnPropNameInRow="Mat_Name" msprop:Generator_ColumnPropNameInTable="Mat_NameColumn" msprop:Generator_UserColumnName="Mat Name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PO_x0020_Text" msprop:Generator_ColumnVarNameInTable="columnPO_Text" msprop:Generator_ColumnPropNameInRow="PO_Text" msprop:Generator_ColumnPropNameInTable="PO_TextColumn" msprop:Generator_UserColumnName="PO Text" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Text" msprop:Generator_ColumnVarNameInTable="columnText" msprop:Generator_ColumnPropNameInRow="Text" msprop:Generator_ColumnPropNameInTable="TextColumn" msprop:Generator_UserColumnName="Text" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PO_x0020_No" msprop:Generator_ColumnVarNameInTable="columnPO_No" msprop:Generator_ColumnPropNameInRow="PO_No" msprop:Generator_ColumnPropNameInTable="PO_NoColumn" msprop:Generator_UserColumnName="PO No" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IO_x0020_No" msprop:Generator_ColumnVarNameInTable="columnIO_No" msprop:Generator_ColumnPropNameInRow="IO_No" msprop:Generator_ColumnPropNameInTable="IO_NoColumn" msprop:Generator_UserColumnName="IO No" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="V_510_TransferPlant" msprop:Generator_TableClassName="V_510_TransferPlantDataTable" msprop:Generator_TableVarName="tableV_510_TransferPlant" msprop:Generator_TablePropName="V_510_TransferPlant" msprop:Generator_RowDeletingName="V_510_TransferPlantRowDeleting" msprop:Generator_RowChangingName="V_510_TransferPlantRowChanging" msprop:Generator_RowEvHandlerName="V_510_TransferPlantRowChangeEventHandler" msprop:Generator_RowDeletedName="V_510_TransferPlantRowDeleted" msprop:Generator_UserTableName="V_510_TransferPlant" msprop:Generator_RowChangedName="V_510_TransferPlantRowChanged" msprop:Generator_RowEvArgName="V_510_TransferPlantRowChangeEvent" msprop:Generator_RowClassName="V_510_TransferPlantRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="mmatno" msprop:Generator_ColumnVarNameInTable="columnmmatno" msprop:Generator_ColumnPropNameInRow="mmatno" msprop:Generator_ColumnPropNameInTable="mmatnoColumn" msprop:Generator_UserColumnName="mmatno" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="18" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="mmateng" msprop:Generator_ColumnVarNameInTable="columnmmateng" msprop:Generator_ColumnPropNameInRow="mmateng" msprop:Generator_ColumnPropNameInTable="mmatengColumn" msprop:Generator_UserColumnName="mmateng" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RY" msprop:Generator_ColumnVarNameInTable="columnRY" msprop:Generator_ColumnPropNameInRow="RY" msprop:Generator_ColumnPropNameInTable="RYColumn" msprop:Generator_UserColumnName="RY" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SB" msprop:Generator_ColumnVarNameInTable="columnSB" msprop:Generator_ColumnPropNameInRow="SB" msprop:Generator_ColumnPropNameInTable="SBColumn" msprop:Generator_UserColumnName="SB" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Days_x0020_Sale_x0020_Min" msprop:Generator_ColumnVarNameInTable="columnDays_Sale_Min" msprop:Generator_ColumnPropNameInRow="Days_Sale_Min" msprop:Generator_ColumnPropNameInTable="Days_Sale_MinColumn" msprop:Generator_UserColumnName="Days Sale Min" type="xs:int" minOccurs="0" />
+              <xs:element name="Days_x0020_Sale_x0020_Max" msprop:Generator_ColumnVarNameInTable="columnDays_Sale_Max" msprop:Generator_ColumnPropNameInRow="Days_Sale_Max" msprop:Generator_ColumnPropNameInTable="Days_Sale_MaxColumn" msprop:Generator_UserColumnName="Days Sale Max" type="xs:int" minOccurs="0" />
+              <xs:element name="S_x002F_Day" msprop:Generator_ColumnVarNameInTable="_columnS_Day" msprop:Generator_ColumnPropNameInRow="_S_Day" msprop:Generator_ColumnPropNameInTable="_S_DayColumn" msprop:Generator_UserColumnName="S/Day" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="V_900_ManageStock" msprop:Generator_TableClassName="V_900_ManageStockDataTable" msprop:Generator_TableVarName="tableV_900_ManageStock" msprop:Generator_TablePropName="V_900_ManageStock" msprop:Generator_RowDeletingName="V_900_ManageStockRowDeleting" msprop:Generator_RowChangingName="V_900_ManageStockRowChanging" msprop:Generator_RowEvHandlerName="V_900_ManageStockRowChangeEventHandler" msprop:Generator_RowDeletedName="V_900_ManageStockRowDeleted" msprop:Generator_UserTableName="V_900_ManageStock" msprop:Generator_RowChangedName="V_900_ManageStockRowChanged" msprop:Generator_RowEvArgName="V_900_ManageStockRowChangeEvent" msprop:Generator_RowClassName="V_900_ManageStockRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="caldate" msprop:Generator_ColumnVarNameInTable="columncaldate" msprop:Generator_ColumnPropNameInRow="caldate" msprop:Generator_ColumnPropNameInTable="caldateColumn" msprop:Generator_UserColumnName="caldate" type="xs:dateTime" />
+              <xs:element name="mplant_location" msprop:Generator_ColumnVarNameInTable="columnmplant_location" msprop:Generator_ColumnPropNameInRow="mplant_location" msprop:Generator_ColumnPropNameInTable="mplant_locationColumn" msprop:Generator_UserColumnName="mplant_location">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Mat" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnMat" msprop:Generator_ColumnPropNameInRow="Mat" msprop:Generator_ColumnPropNameInTable="MatColumn" msprop:Generator_UserColumnName="Mat" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="We" msprop:Generator_ColumnVarNameInTable="columnWe" msprop:Generator_ColumnPropNameInRow="We" msprop:Generator_ColumnPropNameInTable="WeColumn" msprop:Generator_UserColumnName="We" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="V_BOI_Split_Cost" msprop:Generator_TableClassName="V_BOI_Split_CostDataTable" msprop:Generator_TableVarName="tableV_BOI_Split_Cost" msprop:Generator_TablePropName="V_BOI_Split_Cost" msprop:Generator_RowDeletingName="V_BOI_Split_CostRowDeleting" msprop:Generator_RowChangingName="V_BOI_Split_CostRowChanging" msprop:Generator_RowEvHandlerName="V_BOI_Split_CostRowChangeEventHandler" msprop:Generator_RowDeletedName="V_BOI_Split_CostRowDeleted" msprop:Generator_UserTableName="V_BOI_Split_Cost" msprop:Generator_RowChangedName="V_BOI_Split_CostRowChanged" msprop:Generator_RowEvArgName="V_BOI_Split_CostRowChangeEvent" msprop:Generator_RowClassName="V_BOI_Split_CostRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="mcompcode" msprop:Generator_ColumnVarNameInTable="columnmcompcode" msprop:Generator_ColumnPropNameInRow="mcompcode" msprop:Generator_ColumnPropNameInTable="mcompcodeColumn" msprop:Generator_UserColumnName="mcompcode">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="mmonth" msprop:Generator_ColumnVarNameInTable="columnmmonth" msprop:Generator_ColumnPropNameInRow="mmonth" msprop:Generator_ColumnPropNameInTable="mmonthColumn" msprop:Generator_UserColumnName="mmonth">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="myear" msprop:Generator_ColumnVarNameInTable="columnmyear" msprop:Generator_ColumnPropNameInRow="myear" msprop:Generator_ColumnPropNameInTable="myearColumn" msprop:Generator_UserColumnName="myear">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="mcostelement" msprop:Generator_ColumnVarNameInTable="columnmcostelement" msprop:Generator_ColumnPropNameInRow="mcostelement" msprop:Generator_ColumnPropNameInTable="mcostelementColumn" msprop:Generator_UserColumnName="mcostelement">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="mmatno" msprop:Generator_ColumnVarNameInTable="columnmmatno" msprop:Generator_ColumnPropNameInRow="mmatno" msprop:Generator_ColumnPropNameInTable="mmatnoColumn" msprop:Generator_UserColumnName="mmatno" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="18" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="qty" msprop:Generator_ColumnVarNameInTable="columnqty" msprop:Generator_ColumnPropNameInRow="qty" msprop:Generator_ColumnPropNameInTable="qtyColumn" msprop:Generator_UserColumnName="qty" type="xs:decimal" minOccurs="0" />
+              <xs:element name="amount" msprop:Generator_ColumnVarNameInTable="columnamount" msprop:Generator_ColumnPropNameInRow="amount" msprop:Generator_ColumnPropNameInTable="amountColumn" msprop:Generator_UserColumnName="amount" type="xs:decimal" minOccurs="0" />
+              <xs:element name="per_x0020_unit" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnper_unit" msprop:Generator_ColumnPropNameInRow="per_unit" msprop:Generator_ColumnPropNameInTable="per_unitColumn" msprop:Generator_UserColumnName="per unit" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="V_Sales3MonthsDetails" msprop:Generator_TableClassName="V_Sales3MonthsDetailsDataTable" msprop:Generator_TableVarName="tableV_Sales3MonthsDetails" msprop:Generator_TablePropName="V_Sales3MonthsDetails" msprop:Generator_RowDeletingName="V_Sales3MonthsDetailsRowDeleting" msprop:Generator_RowChangingName="V_Sales3MonthsDetailsRowChanging" msprop:Generator_RowEvHandlerName="V_Sales3MonthsDetailsRowChangeEventHandler" msprop:Generator_RowDeletedName="V_Sales3MonthsDetailsRowDeleted" msprop:Generator_UserTableName="V_Sales3MonthsDetails" msprop:Generator_RowChangedName="V_Sales3MonthsDetailsRowChanged" msprop:Generator_RowEvArgName="V_Sales3MonthsDetailsRowChangeEvent" msprop:Generator_RowClassName="V_Sales3MonthsDetailsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PlantName" msprop:Generator_ColumnVarNameInTable="columnPlantName" msprop:Generator_ColumnPropNameInRow="PlantName" msprop:Generator_ColumnPropNameInTable="PlantNameColumn" msprop:Generator_UserColumnName="PlantName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="caldate" msprop:Generator_ColumnVarNameInTable="columncaldate" msprop:Generator_ColumnPropNameInRow="caldate" msprop:Generator_ColumnPropNameInTable="caldateColumn" msprop:Generator_UserColumnName="caldate" type="xs:dateTime" />
+              <xs:element name="mmatno" msprop:Generator_ColumnVarNameInTable="columnmmatno" msprop:Generator_ColumnPropNameInRow="mmatno" msprop:Generator_ColumnPropNameInTable="mmatnoColumn" msprop:Generator_UserColumnName="mmatno">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="18" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ATP" msprop:Generator_ColumnVarNameInTable="columnATP" msprop:Generator_ColumnPropNameInRow="ATP" msprop:Generator_ColumnPropNameInTable="ATPColumn" msprop:Generator_UserColumnName="ATP" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Weight" msprop:Generator_ColumnVarNameInTable="columnWeight" msprop:Generator_ColumnPropNameInRow="Weight" msprop:Generator_ColumnPropNameInTable="WeightColumn" msprop:Generator_UserColumnName="Weight" type="xs:decimal" minOccurs="0" />
+              <xs:element name="mplant_salezone" msprop:Generator_ColumnVarNameInTable="columnmplant_salezone" msprop:Generator_ColumnPropNameInRow="mplant_salezone" msprop:Generator_ColumnPropNameInTable="mplant_salezoneColumn" msprop:Generator_UserColumnName="mplant_salezone">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Comp" msprop:Generator_ColumnVarNameInTable="columnComp" msprop:Generator_ColumnPropNameInRow="Comp" msprop:Generator_ColumnPropNameInTable="CompColumn" msprop:Generator_UserColumnName="Comp">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
