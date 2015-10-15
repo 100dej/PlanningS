@@ -9,17 +9,18 @@
         cx.ClearButton(pnHeader)
         Me.Cursor = Cursors.WaitCursor
 
-        '----------------- แบบเก่า อ.ธงชัย ----------------------------
+        '----------------- แบบเก่า อ.ธงชัย เขียน class ไว้เพื่อลดขั้นตอน และต้องเรียกใช้ SQL ในการดึงข้อมูล ----------------------------
         Dim X1 As String = String.Format("exec ProductMaster '{0}','{1}'", txtMat.Text, txtEng.Text)
-        ' DT = cx.GetdataTable(X1)
+        'DT = cx.GetdataTable(X1)
+        'DV = DT.DefaultView
 
-        '------------------ แบบ MS Standard --------------------------
+        '------------------ แบบ MS Standard ต้องทำ data source / dataset ไว้ใน project --------------------------
         Dim newDT As New PlanningS.PlanningS_stored_procedure.ProductMasterDataTable
         Dim newDTA As New PlanningS_stored_procedureTableAdapters.ProductMasterTableAdapter
         newDT = newDTA.GetData(txtMat.Text, txtEng.Text)
+        DV = newDT.DefaultView
 
         '-----------------------------------------------------------------
-        DV = newDT.DefaultView
         dtGridMatMaster.DataSource = DV
         cx.GridToList(dtGridMatMaster)
 

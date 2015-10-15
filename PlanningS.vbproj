@@ -102,6 +102,10 @@
     </Reference>
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Windows.Forms.DataVisualization, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="System.Windows.Forms.DataVisualization.MSChartExtension, Version=1.4.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\MSChartExtension.1.4.1\lib\System.Windows.Forms.DataVisualization.MSChartExtension.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Xml" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
@@ -321,11 +325,6 @@
       <DependentUpon>PlanningS_Function.xsd</DependentUpon>
     </Compile>
     <Compile Include="PlanningS_stored_procedure.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>PlanningS_stored_procedure.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="PlanningS_stored_procedure1.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>PlanningS_stored_procedure.xsd</DependentUpon>
