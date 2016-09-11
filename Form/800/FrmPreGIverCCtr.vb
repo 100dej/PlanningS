@@ -30,12 +30,14 @@
         Dim Date1 As Date = cx.ExecuteScalar("select xDate from plannings.dbo.tbt_600GiToConsoh where Headertext = '" & HeaderText & "'")
         If Date1 = Nothing Then
             Dim cdl As New OpenFileDialog
+            'cdl.Filter = "File (*.xlsx)|*.xlsx"
             cdl.Filter = "File (*.xls)|*.xls"
 
             If cdl.ShowDialog = Windows.Forms.DialogResult.OK Then
                 Try
                     Dim ds As DataSet
                     ds = cx.GetdataExcel(cdl.FileName)
+                    'ds = cx.GetdataExcelXlxs(cdl.FileName)
                     DV = ds.Tables(0).DefaultView
                     dtgItem.Columns.Add("ItemNo", "ItemNo")
                     dtgItem.DataSource = DV
@@ -90,9 +92,10 @@
                     End Try
                     DV = Nothing
                     dtgItem.DataSource = Nothing
-                    DT = cx.GetdataTable("select a.*,c.baseunit, b.GlAccount  from plannings.dbo.tbt_600preGiToConsoh A " & _
-                     "left join plannings.dbo.tbm_600GiConsohAccount B on a.productcode = B.productcode " & _
-                     "left join [172.18.8.188].npiconsohpd.dbo.tbm_product C on a.productcode = c.productcode ")
+                    DT = cx.GetdataTable("select a.*,c.baseunit, b.GlAccount  from plannings.dbo.tbt_600preGiToConsoh A " &
+                     "left join plannings.dbo.tbm_600GiConsohAccount B on a.productcode = B.productcode " &
+                     "left join 	(select * from [172.18.8.188].npiconsohpd.dbo.tbm_product 
+					 where productcode in (select distinct productcode from plannings.dbo.tbt_600preGiToConsoh)) C on a.productcode = c.productcode ")
                     dtgItem.DataSource = DT
                     cx.GridToList(dtgItem)
 

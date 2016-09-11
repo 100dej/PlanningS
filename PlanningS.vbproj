@@ -21,16 +21,16 @@
     <ManifestKeyFile>PlanningS_TemporaryKey.pfx</ManifestKeyFile>
     <GenerateManifests>true</GenerateManifests>
     <SignManifests>false</SignManifests>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
     <ApplicationIcon>ModelLogo4_1.ico</ApplicationIcon>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
     <OldToolsVersion>3.5</OldToolsVersion>
-    <PublishUrl>C:\inetpub\wwwroot\PlanningS\</PublishUrl>
+    <PublishUrl>D:\deploy\Plannings\</PublishUrl>
     <Install>true</Install>
-    <InstallFrom>Disk</InstallFrom>
+    <InstallFrom>Web</InstallFrom>
     <UpdateEnabled>true</UpdateEnabled>
     <UpdateMode>Foreground</UpdateMode>
     <UpdateInterval>7</UpdateInterval>
@@ -38,6 +38,7 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>true</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>http://172.31.195.13/00plannings/</InstallUrl>
     <UpdateUrl>http://172.31.195.13/00PlanningS/</UpdateUrl>
     <ProductName>PlanningS</ProductName>
     <PublisherName>NawaPlastic</PublisherName>
@@ -45,7 +46,7 @@
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>Plannings.htm</WebPage>
     <TrustUrlParameters>true</TrustUrlParameters>
-    <ApplicationRevision>77</ApplicationRevision>
+    <ApplicationRevision>78</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
@@ -168,6 +169,12 @@
       <DependentUpon>Form4.vb</DependentUpon>
     </Compile>
     <Compile Include="Form\900\Form4.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\900\Frm9040.Designer.vb">
+      <DependentUpon>Frm9040.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\900\Frm9040.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form\900\FrmChangecsotBeginStock.designer.vb">
@@ -352,6 +359,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form\900\Form4.resx">
       <DependentUpon>Form4.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\900\Frm9040.resx">
+      <DependentUpon>Frm9040.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form\900\FrmChangecsotBeginStock.resx">
       <DependentUpon>FrmChangecsotBeginStock.vb</DependentUpon>

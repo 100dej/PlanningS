@@ -506,5 +506,4 @@ Public Class FrmChangecsotBeginStock
         End If
     End Sub
 
-
 End Class

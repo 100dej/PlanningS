@@ -23,15 +23,15 @@ Partial Class FrmChangecsotBeginStock
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.dtpPostdate = New System.Windows.Forms.DateTimePicker()
-        Me.Splitter1 = New System.Windows.Forms.Splitter()
-        Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.dtgMaster = New System.Windows.Forms.DataGridView()
         Me.cmdCostxx = New PlanningS.NPIButton()
         Me.cmdExeccost = New PlanningS.NPIButton()
         Me.cmd582000 = New PlanningS.NPIButton()
+        Me.dtpPostdate = New System.Windows.Forms.DateTimePicker()
         Me.cmd581000 = New PlanningS.NPIButton()
         Me.cmdExecute583 = New PlanningS.NPIButton()
+        Me.Splitter1 = New System.Windows.Forms.Splitter()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.dtgMaster = New System.Windows.Forms.DataGridView()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         CType(Me.dtgMaster, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -50,42 +50,6 @@ Partial Class FrmChangecsotBeginStock
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(1193, 92)
         Me.Panel1.TabIndex = 0
-        '
-        'dtpPostdate
-        '
-        Me.dtpPostdate.CustomFormat = "dd.MM.yyyy"
-        Me.dtpPostdate.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.dtpPostdate.Location = New System.Drawing.Point(323, 41)
-        Me.dtpPostdate.Name = "dtpPostdate"
-        Me.dtpPostdate.Size = New System.Drawing.Size(105, 20)
-        Me.dtpPostdate.TabIndex = 3
-        '
-        'Splitter1
-        '
-        Me.Splitter1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Splitter1.Location = New System.Drawing.Point(0, 92)
-        Me.Splitter1.Name = "Splitter1"
-        Me.Splitter1.Size = New System.Drawing.Size(1193, 3)
-        Me.Splitter1.TabIndex = 1
-        Me.Splitter1.TabStop = False
-        '
-        'Panel2
-        '
-        Me.Panel2.Controls.Add(Me.dtgMaster)
-        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel2.Location = New System.Drawing.Point(0, 95)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(1193, 388)
-        Me.Panel2.TabIndex = 2
-        '
-        'dtgMaster
-        '
-        Me.dtgMaster.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dtgMaster.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.dtgMaster.Location = New System.Drawing.Point(0, 0)
-        Me.dtgMaster.Name = "dtgMaster"
-        Me.dtgMaster.Size = New System.Drawing.Size(1193, 388)
-        Me.dtgMaster.TabIndex = 0
         '
         'cmdCostxx
         '
@@ -126,6 +90,15 @@ Partial Class FrmChangecsotBeginStock
         Me.cmd582000.Text = "582000"
         Me.cmd582000.UseVisualStyleBackColor = True
         '
+        'dtpPostdate
+        '
+        Me.dtpPostdate.CustomFormat = "dd.MM.yyyy"
+        Me.dtpPostdate.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.dtpPostdate.Location = New System.Drawing.Point(323, 41)
+        Me.dtpPostdate.Name = "dtpPostdate"
+        Me.dtpPostdate.Size = New System.Drawing.Size(105, 20)
+        Me.dtpPostdate.TabIndex = 3
+        '
         'cmd581000
         '
         Me.cmd581000.BackColor = System.Drawing.SystemColors.Control
@@ -152,6 +125,33 @@ Partial Class FrmChangecsotBeginStock
         Me.cmdExecute583.Text = "&Execute583"
         Me.cmdExecute583.UseVisualStyleBackColor = True
         '
+        'Splitter1
+        '
+        Me.Splitter1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Splitter1.Location = New System.Drawing.Point(0, 92)
+        Me.Splitter1.Name = "Splitter1"
+        Me.Splitter1.Size = New System.Drawing.Size(1193, 3)
+        Me.Splitter1.TabIndex = 1
+        Me.Splitter1.TabStop = False
+        '
+        'Panel2
+        '
+        Me.Panel2.Controls.Add(Me.dtgMaster)
+        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel2.Location = New System.Drawing.Point(0, 95)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(1193, 388)
+        Me.Panel2.TabIndex = 2
+        '
+        'dtgMaster
+        '
+        Me.dtgMaster.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dtgMaster.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.dtgMaster.Location = New System.Drawing.Point(0, 0)
+        Me.dtgMaster.Name = "dtgMaster"
+        Me.dtgMaster.Size = New System.Drawing.Size(1193, 388)
+        Me.dtgMaster.TabIndex = 0
+        '
         'FrmChangecsotBeginStock
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -160,6 +160,7 @@ Partial Class FrmChangecsotBeginStock
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Splitter1)
         Me.Controls.Add(Me.Panel1)
+        Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Name = "FrmChangecsotBeginStock"
         Me.TabText = "Begin Stock"
         Me.Text = "BeginStock"

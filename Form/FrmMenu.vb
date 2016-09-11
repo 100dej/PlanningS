@@ -106,6 +106,9 @@
             Case "nd90401"
                 Dim cf As New Form6
                 cf.Show(DockPanel)
+            Case "nd90402"
+                Dim cf As New Frm9040
+                cf.Show(DockPanel)
             Case "nd911"
                 Dim cf As New FrmChangecsotBeginStock
                 cf.Show(DockPanel)

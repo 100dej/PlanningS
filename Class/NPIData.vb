@@ -47,7 +47,7 @@
     End Sub
     Public Function GetdataExcel(ByVal Fname As String) As DataSet
         Dim ds As New DataSet
-        Dim strConnection As New OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0; Data Source='" & Fname & " '; " & _
+        Dim strConnection As New OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0; Data Source='" & Fname & " '; " &
                                                  "Extended Properties=Excel 8.0;")
 
         strConnection.Open()
@@ -62,6 +62,23 @@
             strConnection.Close()
         End Try
         Return ds
+    End Function
+    Public Function GetdataExcelXlxs(ByVal Fname As String) As DataSet
+        Dim conn As OleDbConnection
+        Dim dta As OleDbDataAdapter
+        Dim dts As DataSet
+
+        conn = New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + Fname + ";Extended Properties=Excel 12.0;")
+        dta = New OleDbDataAdapter("Select * From [Sheet1$]", conn)
+        dts = New DataSet
+        Try
+            dta.Fill(dts, "[Sheet1$]")
+        Catch ex As Exception
+            MsgBox(ex.Message, 48, "NPI Project")
+            conn.Close()
+        End Try
+        conn.Close()
+        Return dts
     End Function
     Public Function fillImlWithFilesFromDir(ByRef dirPath As String) As ImageList
         Dim allowedExtensions() As String = {".gif", ".jpg", ".bmp", ".png"}
