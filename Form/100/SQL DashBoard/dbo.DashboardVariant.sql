@@ -1,0 +1,3 @@
+﻿
+CREATE function DashboardVariant ( @VUname nvarchar(20),@Vname nvarchar(30),@Y nvarchar(4))returns tableas	return		select month(sh.caldate) as  xMonth,			case when pd.mtype = '' then  '00NonGroup' else pd.mtype end as mtype ,			sum(isnull(Sh.We,0)/1000) As Qty 		from plannings.dbo.ProductHistory Sh 		inner join Plannings.dbo.Select_User_Variant(@VUname , @Vname) FV 
+			on FV.mmatno = sh.mmatno 		left join  plannings.dbo.tbm_190OtherProductDetails Pd			on sh.mmatno = pd.mmatno		where year(sh.caldate) = @Y		group by month(sh.caldate) ,pd.mtype
