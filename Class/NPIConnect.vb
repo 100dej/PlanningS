@@ -14,7 +14,7 @@ Module NPIConnect
     Public NPIRYSqlConnection As String = "Server=172.31.195.13;Database=PlanningS;User Id=sa;Password=sqlrayong"
     Public Consoh As String = "Provider=SQLOLEDB;Server=172.18.8.188;UID=sa;PWD=Npicons2k12;Database=npiconsohpd"
     Public TBTest As String = "Provider=SQLOLEDB;Server=npiry-sv62;uid=sa;pwd=sqlrayong;Database=TBTest"
-    Public Prefsuit As String = "Provider=SQLNCLI;Server=172.30.253.86;UID=pongdejr;pwd=12345678;Database=[NPI_2012.1_Development]"
+    Public Prefsuit As String = "Provider=SQLOLEDB;Server=172.18.8.84;Database=CO_NPI;UID=pongdejr;PWD=Nawa01"
     Public AccountBS As String = "Provider=SQLOLEDB;Server=172.30.171.12;UID=sa;PWD=Npisql2k8r2;Database=ACCDB"
 
 End Module

@@ -49,8 +49,9 @@ Partial Class FrmMenu
         Dim TreeNode25 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("904 Asset master", New System.Windows.Forms.TreeNode() {TreeNode23, TreeNode24})
         Dim TreeNode26 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("911 Change cost adjust")
         Dim TreeNode27 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("912 Standard to actual adjust")
-        Dim TreeNode28 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("910 Account CO", New System.Windows.Forms.TreeNode() {TreeNode26, TreeNode27})
-        Dim TreeNode29 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("900 Test program", New System.Windows.Forms.TreeNode() {TreeNode20, TreeNode21, TreeNode22, TreeNode25, TreeNode28})
+        Dim TreeNode28 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("913 Re calss window set")
+        Dim TreeNode29 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("910 Account CO", New System.Windows.Forms.TreeNode() {TreeNode26, TreeNode27, TreeNode28})
+        Dim TreeNode30 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("900 Test program", New System.Windows.Forms.TreeNode() {TreeNode20, TreeNode21, TreeNode22, TreeNode25, TreeNode29})
         Me.TreeView1 = New System.Windows.Forms.TreeView()
         Me.SuspendLayout()
         '
@@ -116,11 +117,13 @@ Partial Class FrmMenu
         TreeNode26.Text = "911 Change cost adjust"
         TreeNode27.Name = "nd912"
         TreeNode27.Text = "912 Standard to actual adjust"
-        TreeNode28.Name = "Nd910"
-        TreeNode28.Text = "910 Account CO"
-        TreeNode29.Name = "nd900"
-        TreeNode29.Text = "900 Test program"
-        Me.TreeView1.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode2, TreeNode6, TreeNode8, TreeNode11, TreeNode19, TreeNode29})
+        TreeNode28.Name = "nd913"
+        TreeNode28.Text = "913 Re calss window set"
+        TreeNode29.Name = "Nd910"
+        TreeNode29.Text = "910 Account CO"
+        TreeNode30.Name = "nd900"
+        TreeNode30.Text = "900 Test program"
+        Me.TreeView1.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode2, TreeNode6, TreeNode8, TreeNode11, TreeNode19, TreeNode30})
         Me.TreeView1.Size = New System.Drawing.Size(292, 266)
         Me.TreeView1.TabIndex = 0
         '

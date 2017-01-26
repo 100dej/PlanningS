@@ -107,13 +107,16 @@
                 Dim cf As New Form6
                 cf.Show(DockPanel)
             Case "nd90402"
-                Dim cf As New Frm9040
+                Dim cf As New FrmAssetRetirement
                 cf.Show(DockPanel)
             Case "nd911"
                 Dim cf As New FrmChangecsotBeginStock
                 cf.Show(DockPanel)
             Case "nd912"
                 Dim cf As New FrmRevalue
+                cf.Show(DockPanel)
+            Case "nd913"
+                Dim cf As New FrmReclass
                 cf.Show(DockPanel)
             Case Else
                 MsgBox("อยู่ระหว่างการจัดทำ")

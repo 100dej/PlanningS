@@ -171,10 +171,10 @@
     <Compile Include="Form\900\Form4.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form\900\Frm9040.Designer.vb">
-      <DependentUpon>Frm9040.vb</DependentUpon>
+    <Compile Include="Form\900\FrmAssetRetirement.Designer.vb">
+      <DependentUpon>FrmAssetRetirement.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form\900\Frm9040.vb">
+    <Compile Include="Form\900\FrmAssetRetirement.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form\900\FrmChangecsotBeginStock.designer.vb">
@@ -229,6 +229,12 @@
       <DependentUpon>FrmGiToConsoh.vb</DependentUpon>
     </Compile>
     <Compile Include="Form\800\FrmGiToConsoh.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\900\FrmReclass.Designer.vb">
+      <DependentUpon>FrmReclass.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\900\FrmReclass.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form\FrmPictureLoop.Designer.vb">
@@ -360,8 +366,8 @@
     <EmbeddedResource Include="Form\900\Form4.resx">
       <DependentUpon>Form4.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form\900\Frm9040.resx">
-      <DependentUpon>Frm9040.vb</DependentUpon>
+    <EmbeddedResource Include="Form\900\FrmAssetRetirement.resx">
+      <DependentUpon>FrmAssetRetirement.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form\900\FrmChangecsotBeginStock.resx">
       <DependentUpon>FrmChangecsotBeginStock.vb</DependentUpon>
@@ -389,6 +395,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form\800\FrmGiToConsoh.resx">
       <DependentUpon>FrmGiToConsoh.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\900\FrmReclass.resx">
+      <DependentUpon>FrmReclass.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form\FrmPictureLoop.resx">
       <DependentUpon>FrmPictureLoop.vb</DependentUpon>
