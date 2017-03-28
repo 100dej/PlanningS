@@ -241,7 +241,7 @@
         Next
 
         For Each Drv As DataRowView In DV
-            Select Case Drv!RM_FC
+            Select Case Drv!diff_after_Restate
                 Case Is <> 0
                     For i As Integer = 0 To Item1.Count - 1
                         S2.Append(Item1(i))
@@ -249,16 +249,16 @@
                     Next
                     S2.Append("             ACGL_ITEM-HKONT(01)                582000")
                     S2.AppendLine()
-                    Select Case Drv!Rm_FC
+                    Select Case Drv!diff_after_Restate
                         Case Is > 0
                             S2.Append("             ACGL_ITEM-SHKZG(01)                H")
                         Case Is < 0
                             S2.Append("             ACGL_ITEM-SHKZG(01)                S")
                     End Select
                     S2.AppendLine()
-                    S2.Append("             ACGL_ITEM-WRBTR(01)                " & Math.Abs(Drv!RM_FC))
+                    S2.Append("             ACGL_ITEM-WRBTR(01)                " & Math.Abs(Drv!diff_after_Restate))
                     S2.AppendLine()
-                    S2.Append("             ACGL_ITEM-KOSTL(01)                0871-60000")
+                    S2.Append("             ACGL_ITEM-KOSTL(01)                " & Drv!mcostcenter)
                     S2.AppendLine()
                     S2.Append("             ACGL_ITEM-MATNR(01)                " & Drv!mmatno)
                     S2.AppendLine()
@@ -273,14 +273,14 @@
                     Next
                     S2.Append("             ACGL_ITEM-HKONT(01)                581000")
                     S2.AppendLine()
-                    Select Case Drv!RM_FC
+                    Select Case Drv!diff_after_Restate
                         Case Is > 0
                             S2.Append("             ACGL_ITEM-SHKZG(01)                S")
                         Case Is < 0
                             S2.Append("             ACGL_ITEM-SHKZG(01)                H")
                     End Select
                     S2.AppendLine()
-                    S2.Append("             ACGL_ITEM-WRBTR(01)                " & Math.Abs(Drv!RM_FC))
+                    S2.Append("             ACGL_ITEM-WRBTR(01)                " & Math.Abs(Drv!diff_after_Restate))
                     S2.AppendLine()
                     S2.Append("             ACGL_ITEM-KOSTL(01)                0871-60000")
                     S2.AppendLine()

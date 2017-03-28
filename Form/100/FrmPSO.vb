@@ -154,19 +154,22 @@
         pnGrand.Height = 230
 
         Dim Dcontrol As DataTable = cx.GetdataTable(String.Format("Exec plannings.dbo.List_ControlForm'{0}'", Me.Name.ToString))
-        For Each dr As DataRow In Dcontrol.Rows
-            For Each ctrl As Control In ListOfControl
-                If dr!ccontrol.ToString = ctrl.Name Then
-                    ControlForm.Add(dr!rowid, ctrl)
-                End If
-            Next
-        Next
 
-        For i As Integer = 1 To ControlForm.Count
-            ControlForm(i).Enabled = False
-        Next
+        Select Case Uname
+            Case "pongdejr"
+            Case Else
+                For Each dr As DataRow In Dcontrol.Rows
+                    For Each ctrl As Control In ListOfControl
+                        If dr!ccontrol.ToString = ctrl.Name Then
+                            ControlForm.Add(dr!rowid, ctrl)
+                        End If
+                    Next
+                Next
 
-
+                For i As Integer = 1 To ControlForm.Count
+                    ControlForm(i).Enabled = False
+                Next
+        End Select
         cbFunctionCopyGrid.Checked = cx.Get_Function_CopyGrid(Uname)
 
 
