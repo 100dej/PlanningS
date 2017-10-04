@@ -31,13 +31,13 @@
         If Date1 = Nothing Then
             Dim cdl As New OpenFileDialog
             'cdl.Filter = "File (*.xlsx)|*.xlsx"
-            cdl.Filter = "File (*.xls)|*.xls"
+            cdl.Filter = "File (*.xls;*.xlsx)|*.xls;*.xlsx"
 
             If cdl.ShowDialog = Windows.Forms.DialogResult.OK Then
                 Try
                     Dim ds As DataSet
-                    ds = cx.GetdataExcel(cdl.FileName)
-                    'ds = cx.GetdataExcelXlxs(cdl.FileName)
+                    'ds = cx.GetdataExcel(cdl.FileName)
+                    ds = cx.GetdataExcelXlxs(cdl.FileName)
                     DV = ds.Tables(0).DefaultView
                     dtgItem.Columns.Add("ItemNo", "ItemNo")
                     dtgItem.DataSource = DV
